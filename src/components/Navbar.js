@@ -18,9 +18,9 @@ function NavbarSocial(){
 // brand
 function NavbarBrand(){
     return(
-        <div className = 'navbar__brand w-1/3 flex justify-center'>
+        <div className = 'navbar__brand w-1/3 flex justify-center h-20 w-20 md:h-24 md:w-24'>
             <Link to = '/'>
-                <img width = '100px' height = '100px' src = '/logo.png' alt = 'brand' />
+                <img src = '/logo.png' alt = 'brand' />
             </Link>
         </div>
     );
