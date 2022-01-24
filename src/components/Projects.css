@@ -1,3 +1,7 @@
+.projects__title{
+    color: #141C3A;
+}
+
 .project__thumbnail{
     position: relative;
     transform: translateX(40px);
