@@ -7,8 +7,8 @@ const projects = [{
     logo: '/pokemon.png',
     backgroundColor: 'bg-amber-400',
     links: {
-        github: '#',
-        hosted: '#',
+        github: 'https://github.com/k99sharma/pokemon-react',
+        hosted: 'https://ghost32-pokemon.netlify.app/',
     },
 },
 {
@@ -17,8 +17,8 @@ const projects = [{
     logo: '/bifrost.png',
     backgroundColor: 'bg-green-400',
     links: {
-        github: '#',
-        hosted: '#',
+        github: 'https://github.com/k99sharma/bifrost',
+        hosted: 'https://ghost32-bifrost.netlify.app/',
     },
 },
 {
@@ -27,8 +27,8 @@ const projects = [{
     logo: '/planet.png',
     backgroundColor: 'bg-orange-400',
     links: {
-        github: '#',
-        hosted: '#',
+        github: 'https://github.com/k99sharma/planets-api',
+        hosted: 'https://www.postman.com/ghost32/workspace/my-workspace/collection/13225438-fc6cdd38-795a-44a4-9db4-43abca2b0372?ctx=documentation',
     },
 },];
 

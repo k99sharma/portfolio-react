@@ -1,0 +1,24 @@
+.about{
+    min-height: 20vh;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    position: relative;
+    top: -114px;
+}
+
+.skills{
+    position: relative;
+    background-color: white;
+    min-height: 30vh;
+    width: 90vw;
+    top: 80px;
+    margin: auto;
+}
+
+.text-color{
+    color: #141C3A;
+}
+
+.text-color-2{
+    color: #009ffd;
+}
