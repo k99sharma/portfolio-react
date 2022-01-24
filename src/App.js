@@ -2,6 +2,7 @@ import './App.css';
 
 // importing components
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 import { 
   BrowserRouter,
@@ -9,11 +10,6 @@ import {
   Route
 } from 'react-router-dom';
 
-function Home(){
-  return(
-    <h1>Home</h1>
-  );
-}
 
 function App() {
   return (

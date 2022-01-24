@@ -1,20 +1,5 @@
 import { Link } from 'react-router-dom';
 
-// social links 
-function NavbarSocial(){
-    return(
-        <div className = 'navbar__social hidden md:flex justify-left w-1/3'>
-            <a className = 'pl-10 pr-5' href = "#">
-                <img width = '30px' height = '30px' src = '/linkedin.png' alt = 'linkedin' />
-            </a>
-
-            <a className = 'pl-5 pr-10' href = "#">
-                <img width = '30px' height = '30px' src = '/github.png' alt = 'github' />
-            </a>
-        </div>
-    );
-}
-
 // brand
 function NavbarBrand(){
     return(
@@ -42,7 +27,6 @@ function NavbarMenu(){
 function Navbar(){
     return(
         <div className = 'navbar flex h-24 justify-around items-center my-5'>
-            <NavbarSocial />
             <NavbarBrand />
             <NavbarMenu />
         </div>

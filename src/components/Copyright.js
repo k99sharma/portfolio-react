@@ -1,0 +1,81 @@
+import './Copyright.css';
+
+function Copyright(){
+    const social = [{
+        id: 0,
+        name: 'twitter',
+        address: '#',
+        img: '/twitter.png'
+    },
+    {
+        id: 1,
+        name: 'linkedin',
+        address: '#',
+        img: '/linkedin.png',
+    },
+    {
+        id: 2,
+        name: 'github',
+        address: '#',
+        img: '/github.png',
+    },
+    {
+        id: 3,
+        name: 'mail',
+        address: '#',
+        img: '/email.png',
+    },];
+
+    return(
+        <div className = 'copyright'>
+                <div className='copyright__contact w-11/12 lg:w-9/12 text-center rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-3 justify-around items-center py-14 px-5'>
+                    <div className = 'text-3xl font-bold font-sans p-2'>
+                        Start a project
+                    </div>
+
+                    <div className = 'text-lg lg:text-xl font-light py-8'>
+                        Interested in working together?
+                        We should queue up a chat.
+                        I'll buy the coffee.
+                    </div>
+
+                    <div>
+                        <button className = 'contactButton'>
+                            Let's do this
+                        </button>
+                    </div>
+                </div>
+
+                <div className = 'home__last__copyright pt-4 px-6 pb-16'>
+                    <div className = ''>
+                        <img src = '' alt = 'logo' />
+                    </div>
+
+                    <div className = 'p-4'>
+                        <div className = 'text-2xl text-white text-center my-8'>
+                                Living, learning, & leveling<br/>
+                                up one day at a time.
+                        </div>
+                    </div>
+
+                    <div className = 'mb-8 flex items-center justify-center'>
+                        <div className = 'flex py-4'>
+                            {
+                                social.map(icon => {
+                                    return <a className = 'mx-3' key = { icon.id } href = { icon.address }>
+                                        <img height = "30px" width = "30px" src = { icon.img } alt = { icon.name } />
+                                    </a>
+                                })
+                            }
+                        </div>
+                    </div>
+                    
+                <div className = 'text-white text-base text-center'>
+                    Handcrafted by me &copy; twentytwentytwo
+                </div>
+            </div>
+        </div> 
+    );
+}
+
+export default Copyright;
