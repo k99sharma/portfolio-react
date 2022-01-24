@@ -4,6 +4,7 @@ import './Home.css';
 import Projects from './Projects';
 import Copyright from './Copyright';
 import Introduction from './Introduction';
+import About from './About';
 
 
 function Home(){
@@ -14,6 +15,7 @@ function Home(){
 
 
             {/* second section of home */}
+            <About />
             {/* <div className = 'home grid mx-4 grid-cols-1 md:grid-cols-2'>
                 <div className = 'flex justify-start items-center'>
                     <div className = 'p-4 flex flex-col justify-around items-start'>

@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans&display=swap');
 
 body{
-    font-family: 'Jost', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }

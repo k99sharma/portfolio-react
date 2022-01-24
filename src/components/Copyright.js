@@ -38,7 +38,6 @@ function Copyright(){
                     <div className = 'text-lg lg:text-xl font-light py-8'>
                         Interested in working together?
                         We should queue up a chat.
-                        I'll buy the coffee.
                     </div>
 
                     <div>
