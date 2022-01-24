@@ -36,14 +36,14 @@ function SkillSet(){
                             </a>
                         </div>
 
-                        <div target = '_blank' className = 'my-2'>
-                            <a href = 'https://www.hackerrank.com/kalash_strt'>
+                        <div className = 'my-2'>
+                            <a target = '_blank' href = 'https://www.hackerrank.com/kalash_strt'>
                                 <img width = '150px' src = 'https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white' alt = 'hackerrank' />
                             </a>
                         </div>
 
-                        <div target = '_blank' className = 'my-2'>
-                            <a href = 'https://codeforces.com/profile/kalash_strt'>
+                        <div className = 'my-2'>
+                            <a target = '_blank' href = 'https://codeforces.com/profile/kalash_strt'>
                                 <img width = '150px' src = 'https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&logo=Codeforces&logoColor=white' alt = 'codeforces' />
                             </a>
                         </div>
