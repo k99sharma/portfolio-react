@@ -1,4 +1,5 @@
 import './Home.css';
+import { useState } from 'react';
 
 // importing components
 import Projects from './Projects';
@@ -6,42 +7,43 @@ import Copyright from './Copyright';
 import Introduction from './Introduction';
 import About from './About';
 
-
 function Home(){
+    const [display, setDisplay] = useState(false);
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        setDisplay(true);
+      } else {
+        setDisplay(false);
+      }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
+    }
+
+
     return(
         <>
             {/* introduction */}
             <Introduction />
 
 
-            {/* second section of home */}
+            {/* home about */}
             <About />
-            {/* <div className = 'home grid mx-4 grid-cols-1 md:grid-cols-2'>
-                <div className = 'flex justify-start items-center'>
-                    <div className = 'p-4 flex flex-col justify-around items-start'>
-                        <div className = 'home__content text-3xl'>
-                            I'm a Web Developer 
-                            who is passionate about
-                            writing clean, elegant and efficient code.
-                            Innovation is my passion.
-                        </div>
-
-                        <button className = 'button'>
-                            Projects
-                        </button>
-                    </div>
-                </div>
-
-                <div className = 'home__illustration grid place-items-center'>
-                    <img height = "500px" width = "500px" src = '/home1.svg' alt = 'illustration' />
-                </div>
-            </div> */}
 
             {/* home projects */}
             <Projects />
 
             {/* home copyright */}
             <Copyright />
+
+            <div onClick = { topFunction } className = { !display ? 'hidden' : 'up-arrow p-2 bg-sky-300 cursor-pointer' }>
+                <img width = "30px" height = "30px" src = 'up.png' alt = 'up' />
+            </div>
         </>   
     );
 }
