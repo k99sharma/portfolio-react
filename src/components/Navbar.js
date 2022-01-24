@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // brand
 function NavbarBrand(){
     return(
-        <div className = 'navbar__brand w-1/3 flex justify-center h-20 w-20 md:h-24 md:w-24'>
+        <div className = 'navbar__brand w-1/3 flex justify-start h-14 w-14'>
             <Link to = '/'>
                 <img src = '/logo.png' alt = 'brand' />
             </Link>

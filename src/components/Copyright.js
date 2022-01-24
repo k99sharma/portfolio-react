@@ -47,10 +47,6 @@ function Copyright(){
                 </div>
 
                 <div className = 'home__last__copyright pt-4 px-6 pb-16'>
-                    <div className = ''>
-                        <img src = '' alt = 'logo' />
-                    </div>
-
                     <div className = 'p-4'>
                         <div className = 'text-2xl text-white text-center my-8'>
                                 Living, learning, & leveling<br/>
