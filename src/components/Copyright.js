@@ -67,7 +67,7 @@ function Copyright(){
                         <div className = 'flex py-4'>
                             {
                                 social.map(icon => {
-                                    return <a target = '_blank' className = 'mx-3' key = { icon.id } href = { icon.address }>
+                                    return <a target = '_blank' rel="noreferrer"  className = 'mx-3' key = { icon.id } href = { icon.address }>
                                         <img height = "30px" width = "30px" src = { icon.img } alt = { icon.name } />
                                     </a>
                                 })

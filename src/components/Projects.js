@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './Projects.css';
 
 const projects = [{
@@ -54,11 +53,11 @@ function Projects(){
                                     </div>
     
                                     <div className = 'project__links flex flex-col p-3 justify-center'>
-                                        <a target = '_blank' href = { project.links.github}>
+                                        <a target = '_blank' rel="noreferrer" href = { project.links.github}>
                                             <img className = 'w-6 h-6 my-3' src = '/github.png' alt = 'github' />
                                         </a>
     
-                                        <a target = '_blank' href = { project.links.hosted }>
+                                        <a target = '_blank' rel="noreferrer" href = { project.links.hosted }>
                                             <img className = 'w-6 h-6 my-3' src = '/web.png' alt = 'hosting' />
                                         </a>
                                     </div>

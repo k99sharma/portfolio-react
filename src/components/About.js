@@ -31,19 +31,19 @@ function SkillSet(){
 
                     <div className = 'mb-9 text-lg flex flex-col items-center'>
                         <div className = 'my-2'>
-                            <a target = '_blank' href = 'https://leetcode.com/ghost_32/'>
+                            <a target = '_blank' rel="noreferrer" href = 'https://leetcode.com/ghost_32/'>
                                 <img width = '150px' src = 'https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black' alt = 'leetcode' />
                             </a>
                         </div>
 
                         <div className = 'my-2'>
-                            <a target = '_blank' href = 'https://www.hackerrank.com/kalash_strt'>
+                            <a target = '_blank' rel="noreferrer" href = 'https://www.hackerrank.com/kalash_strt'>
                                 <img width = '150px' src = 'https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white' alt = 'hackerrank' />
                             </a>
                         </div>
 
                         <div className = 'my-2'>
-                            <a target = '_blank' href = 'https://codeforces.com/profile/kalash_strt'>
+                            <a target = '_blank' rel="noreferrer" href = 'https://codeforces.com/profile/kalash_strt'>
                                 <img width = '150px' src = 'https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&logo=Codeforces&logoColor=white' alt = 'codeforces' />
                             </a>
                         </div>
