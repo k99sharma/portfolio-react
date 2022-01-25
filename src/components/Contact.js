@@ -12,7 +12,17 @@ function Contact(){
                 </div>
             </div>
 
-            <form onSubmit = { e => e.preventDefault() } name="contact" method="POST" data-netlify="true" autoComplete='off'>
+            <form id = 'contactForm' onSubmit = { (e) => {
+                        document.getElementById("contactForm").reset();
+                        e.preventDefault();
+                    }      
+                } 
+                name="contact" 
+                method="POST" 
+                netlify 
+                netlify-honeypot="bot-field" 
+                autoComplete='off'
+            >
                 <div className = 'form-container p-3 w-9/12 lg:w-7/12'>
                     <div className = 'grid grid-cols-1 md:grid-cols-2'>
                         <div className = 'mb-5'>
