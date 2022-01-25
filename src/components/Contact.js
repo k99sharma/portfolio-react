@@ -12,17 +12,8 @@ function Contact(){
                 </div>
             </div>
 
-            <form id = 'contactForm' onSubmit = { (e) => {
-                        document.getElementById("contactForm").reset();
-                        e.preventDefault();
-                    }      
-                } 
-                name="contact" 
-                method="POST" 
-                netlify 
-                netlify-honeypot="bot-field" 
-                autoComplete='off'
-            >
+            <form name = "contact v1" method = "POST" data-netlify = "true" onSubmit = "submit">
+                <input type = "hidden" name = "form-name" value = "contact v1" />
                 <div className = 'form-container p-3 flex flex-col justify-center items-center md:block md:w-9/12 lg:w-7/12'>
                     <div className = 'grid grid-cols-1 md:grid-cols-2'>
                         <div className = 'mb-5'>
@@ -32,7 +23,7 @@ function Contact(){
                                 </label>
                             </div>
                             <div>
-                                <input className = 'px-3' id = 'fname' type = 'text' name = 'fname' placeholder = 'First Name' required />
+                                <input className = 'px-3' id = 'fname' type = 'text' name = 'first-name' placeholder = 'First Name' required />
                             </div>
                         </div>
 
@@ -43,7 +34,7 @@ function Contact(){
                                 </label>
                             </div>
                             <div>
-                                <input className = 'px-3' id = 'lname' type = 'text' name = 'lname' placeholder = 'Last Name' required />
+                                <input className = 'px-3' id = 'lname' type = 'text' name = 'last-name' placeholder = 'Last Name' required />
                             </div>
                         </div>
                     </div>
