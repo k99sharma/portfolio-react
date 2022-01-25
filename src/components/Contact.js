@@ -12,10 +12,9 @@ function Contact(){
                 </div>
             </div>
 
-            <form id="form" name = "contact v1" method = "POST" data-netlify = "true" autoComplete='off' onSubmit = {(e) => {
-                document.getElementById('contact-form').reset();
-                e.preventDefault();
-            }}>
+            <form id="form" name = "contact v1" method = "POST" data-netlify = "true" autoComplete='off' 
+                onSubmit = {() => { document.getElementById('contact-form').reset() }}
+            >
                 <input type = "hidden" name = "form-name" value = "contact v1" />
                 <div className = 'form-container p-3 flex flex-col justify-center items-center md:block md:w-9/12 lg:w-7/12'>
                     <div className = 'grid grid-cols-1 md:grid-cols-2'>
