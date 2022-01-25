@@ -36,7 +36,7 @@ function Projects(){
     return(
         <>
             <div className = 'projects py-20 px-6'>  
-                <div className = 'projects__title pb-6 text-4xl font-bold text-center'>
+                <div className = 'projects__title pb-6 text-4xl font-bold text-font text-center'>
                     My Recent Work
                 </div>
 

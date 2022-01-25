@@ -7,7 +7,7 @@ function SkillSet(){
                         <img width = '100px' height = '100px' src = '/programming.png' alt = 'programming' />
                     </div>
 
-                    <div className = 'skills__title text-color my-6 text-2xl font-bold'>
+                    <div className = 'skills__title text-font text-color my-6 text-xl font-bold'>
                         Programming
                     </div>
 
@@ -17,7 +17,7 @@ function SkillSet(){
                         </p>
                     </div>
 
-                    <div className = 'text-xl text-color-2 mt-6 mb-2'>
+                    <div className = 'text-lg text-font text-color-2 mt-6 mb-2'>
                         Languages I Use
                     </div>
 
@@ -25,7 +25,7 @@ function SkillSet(){
                         <p className = 'mb-1'>C, Java, Python</p>
                     </div>
 
-                    <div className = 'text-xl text-color-2 mt-6 mb-2'>
+                    <div className = 'text-lg text-font text-color-2 mt-6 mb-2'>
                         Coding Platform
                     </div>
 
@@ -55,7 +55,7 @@ function SkillSet(){
                         <img width = '100px' height = '100px' src = '/development.png' alt = 'development' />
                     </div>
 
-                    <div className = 'skills__title text-color my-6 text-2xl font-bold'>
+                    <div className = 'skills__title text-font text-color my-6 text-xl font-bold'>
                         Development
                     </div>
 
@@ -65,7 +65,7 @@ function SkillSet(){
                         </p>
                     </div>
 
-                    <div className = 'text-xl text-color-2 mt-6 mb-2'>
+                    <div className = 'text-lg text-font text-color-2 mt-6 mb-2'>
                         Languages I Use
                     </div>
                 
@@ -73,7 +73,7 @@ function SkillSet(){
                         <p className = 'mb-1'>HTML, CSS, JavaScript</p>
                     </div>
 
-                    <div className = 'text-xl text-color-2 mt-6 mb-2'>
+                    <div className = 'text-lg text-font text-color-2 mt-6 mb-2'>
                         Dev Tools
                     </div>
                 
@@ -101,7 +101,7 @@ function About(){
         <>
             <div className = 'about pt-20 px-6 pb-54 text-white'>
                 <div className = 'm-3 flex flex-col justify-center items-center'>
-                    <div className = 'mb-6 text-center text-3xl font-bold'>
+                    <div className = 'mb-6 text-center text-font text-3xl font-bold'>
                         Hi, I'm Kalash. Nice to meet you.
                     </div>
 

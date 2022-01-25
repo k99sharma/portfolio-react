@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 body{
     font-family: 'PT Sans', sans-serif;
@@ -10,4 +11,8 @@ body{
 
 html{
     scroll-behavior: smooth;
+}
+
+.text-font{
+    font-family: 'Libre Baskerville', serif;
 }

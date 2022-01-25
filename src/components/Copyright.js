@@ -31,7 +31,7 @@ function Copyright(){
     return(
         <div className = 'copyright'>
                 <div className='copyright__contact w-11/12 lg:w-9/12 text-center rounded-2xl shadow-lg grid grid-cols-1 md:grid-cols-3 justify-around items-center py-14 px-5'>
-                    <div className = 'text-3xl font-bold font-sans p-2'>
+                    <div className = 'text-3xl font-bold text-font p-2'>
                         Start a project
                     </div>
 

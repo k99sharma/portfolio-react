@@ -10,7 +10,7 @@ import About from './About';
 function Home(){
     const [display, setDisplay] = useState(false);
 
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function(){scrollFunction()};
 
     function scrollFunction() {
       if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
