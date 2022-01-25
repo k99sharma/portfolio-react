@@ -23,7 +23,7 @@ function Contact(){
                 netlify-honeypot="bot-field" 
                 autoComplete='off'
             >
-                <div className = 'form-container p-3 w-9/12 lg:w-7/12'>
+                <div className = 'form-container p-3 flex flex-col justify-center items-center md:block md:w-9/12 lg:w-7/12'>
                     <div className = 'grid grid-cols-1 md:grid-cols-2'>
                         <div className = 'mb-5'>
                             <div className = 'mb-3'>
