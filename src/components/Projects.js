@@ -29,7 +29,17 @@ const projects = [{
         github: 'https://github.com/k99sharma/planets-api',
         hosted: 'https://www.postman.com/ghost32/workspace/my-workspace/collection/13225438-fc6cdd38-795a-44a4-9db4-43abca2b0372?ctx=documentation',
     },
-},];
+},
+{
+    id: 3,
+    name: 'Mount Pizza',
+    logo: '/mountpizza.png',
+    backgroundColor: 'bg-amber-400',
+    links: {
+        github: 'https://github.com/k99sharma/OIBSIP',
+        hosted: 'https://mountpizza.netlify.app',
+    },
+}];
 
 function Projects(){
     return(
