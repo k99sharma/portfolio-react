@@ -27,7 +27,7 @@ const projects = [{
     backgroundColor: 'bg-orange-400',
     links: {
         github: 'https://github.com/k99sharma/planets-api',
-        hosted: 'https://www.postman.com/ghost32/workspace/my-workspace/collection/13225438-fc6cdd38-795a-44a4-9db4-43abca2b0372?ctx=documentation',
+        hosted: 'https://www.postman.com/winter-shuttle-180342/workspace/planet-visualizer/collection/13225438-fc6cdd38-795a-44a4-9db4-43abca2b0372?ctx=documentation',
     },
 },
 {
