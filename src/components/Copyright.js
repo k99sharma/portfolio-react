@@ -52,7 +52,7 @@ function Copyright() {
             <div className='home__last__copyright pt-4 px-6 pb-16'>
                 <div className='p-4'>
                     <div className='flex justify-center items-center'>
-                        <img width="150px" height="150px" src='/logo2.png' alt='logo' />
+                        <img width="50px" height="50px" src='/logo.png' alt='logo' />
                     </div>
                 </div>
 

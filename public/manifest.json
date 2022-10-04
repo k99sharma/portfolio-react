@@ -3,13 +3,13 @@
   "name": "Kalash Sharma",
   "icons": [
     {
-      "src": "logo1.svg",
-      "type": "image/svg",
+      "src": "logo.png",
+      "type": "image/png",
       "sizes": "500x500"
     },
     {
-      "src": "logo2.svg",
-      "type": "image/svg",
+      "src": "logo.png",
+      "type": "image/png",
       "sizes": "500x500"
     }
   ],
