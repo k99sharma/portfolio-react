@@ -41,34 +41,34 @@ const projects = [{
     },
 }];
 
-function Projects(){
-    return(
+function Projects() {
+    return (
         <>
-            <div className = 'projects py-20 px-6'>  
-                <div className = 'projects__title pb-6 text-4xl font-bold text-font text-center'>
+            <div className='projects py-20 px-6'>
+                <div className='projects__title pb-6 text-4xl font-bold text-font text-center'>
                     My Recent Work
                 </div>
 
-                <div className = 'projects__subtitle pb-6 text-xl text-center font-light'>
-                    Here are a few design projects I've worked on recently.
+                <div className='projects__subtitle pb-6 text-xl text-center font-light'>
+                    Here are a few projects I've worked on recently.
                 </div>
 
-                <div className = 'projects__list py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                <div className='projects__list py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     {
                         projects.map(project => {
-                            return <div key = { project.id } className = 'mb-5'>
-                                <div className = 'project flex m-3 h-60'>
-                                    <div className = {'project__thumbnail flex justify-center items-center grow rounded-xl ' + project.backgroundColor}>
-                                        <img className = 'w-24 h-24' src = { project.logo } alt = { project.name } />
+                            return <div key={project.id} className='mb-5'>
+                                <div className='project flex m-3 h-60'>
+                                    <div className={'project__thumbnail flex justify-center items-center grow rounded-xl ' + project.backgroundColor}>
+                                        <img className='w-24 h-24' src={project.logo} alt={project.name} />
                                     </div>
-    
-                                    <div className = 'project__links flex flex-col p-3 justify-center'>
-                                        <a target = '_blank' rel="noreferrer" href = { project.links.github}>
-                                            <img className = 'w-6 h-6 my-3' src = '/github.png' alt = 'github' />
+
+                                    <div className='project__links flex flex-col p-3 justify-center'>
+                                        <a target='_blank' rel="noreferrer" href={project.links.github}>
+                                            <img className='w-6 h-6 my-3' src='/github.png' alt='github' />
                                         </a>
-    
-                                        <a target = '_blank' rel="noreferrer" href = { project.links.hosted }>
-                                            <img className = 'w-6 h-6 my-3' src = '/web.png' alt = 'hosting' />
+
+                                        <a target='_blank' rel="noreferrer" href={project.links.hosted}>
+                                            <img className='w-6 h-6 my-3' src='/web.png' alt='hosting' />
                                         </a>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@ function Projects(){
                     }
                 </div>
             </div>
-        </> 
+        </>
     );
 }
 

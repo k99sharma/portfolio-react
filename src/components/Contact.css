@@ -1,52 +1,52 @@
-.icon{
-    position: relative;
-    top: -50px;
+.icon {
+  position: relative;
+  top: -50px;
 }
 
-.title{
-    color: #141c3a;
+.title {
+  color: #141c3a;
 }
 
-.form-container{
-    margin: auto;
+.form-container {
+  margin: auto;
 }
 
-label{
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: rgba(41, 51, 71, 0.65);
+label {
+  font-size: 20px;
+  margin-bottom: 50px;
+  color: rgba(41, 51, 71, 0.65);
 }
 
-input{
-    border: 1px solid black;
-    padding: 5px;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
+input {
+  border: 1px solid black;
+  padding: 5px;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
 }
 
-textarea{
-    border: 1px solid black;
-    padding: 5px;
-    min-width: 300px;
-    max-width: 400px;
-    height: 150px;
-    border-radius: 5px;
+textarea {
+  border: 1px solid black;
+  padding: 5px;
+  min-width: 300px;
+  max-width: 400px;
+  height: 150px;
+  border-radius: 5px;
 }
 
-button{
-    border: 2px solid #009ffd;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    font-weight: 800;
-    width: 180px;
-    height: 60px;
-    margin: 1rem;
-    color: #009ffd;
+button {
+  border: 2px solid #009ffd;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 180px;
+  height: 60px;
+  margin: 1rem;
+  color: #009ffd;
 }
 
-button:hover{
-    color: white;
-    background-color: #009ffd;
-    transition: all .2s ease-in-out;
+button:hover {
+  color: white;
+  background-color: #009ffd;
+  transition: all 0.2s ease-in-out;
 }
