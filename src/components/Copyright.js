@@ -26,7 +26,13 @@ function Copyright() {
         name: 'mail',
         address: 'mailto:kalash.strt@gmail.com',
         img: '/email.png',
-    },];
+    },
+    {
+        id: 4,
+        name: 'hashnode',
+        address: 'https://kalashsharma.hashnode.dev/',
+        img: '/hashnode.png',
+    }];
 
     return (
         <div className='copyright'>
