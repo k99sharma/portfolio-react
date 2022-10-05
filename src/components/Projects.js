@@ -6,7 +6,7 @@ import { techLinks } from '../utils/techLinks';
 const projects = [{
     id: 0,
     name: 'Pokedex',
-    description: 'Pokedex is a React application. It fetches pokemon from an Open Pokedox API and displays them in the form of a grid. Other features includes searching and filtering.',
+    description: 'Pokedex application created using React library, tailwind CSS, and official pokemon API. It shows pokemon in form of cards with features including pokemon searching and filtering based on regions.',
     logo: '/project/pokemon.png',
     tech: ['react', 'tailwind'],
     links: {
@@ -30,9 +30,9 @@ const projects = [{
 {
     id: 2,
     name: 'Planet Visualizer',
-    description: 'I am description',
+    description: 'Planet Visualizer is a project created for Postman Visualization Hackathon. It uses the Postman Visualizer feature to visualize different planet information with an integrated 3D model. It fetches data from custom-built API.',
     logo: '/project/planet.png',
-    tech: ['postman', 'html5', 'css3', 'javascript'],
+    tech: ['postman', 'html5', 'css3', 'javascript', 'threejs'],
     links: {
         github: 'https://github.com/k99sharma/planets-api',
         hosted: 'https://www.postman.com/winter-shuttle-180342/workspace/planet-visualizer/collection/13225438-fc6cdd38-795a-44a4-9db4-43abca2b0372?ctx=documentation',
@@ -42,7 +42,7 @@ const projects = [{
 {
     id: 3,
     name: 'Mount Pizza',
-    description: 'Mount Pizza is a web application ',
+    description: 'A Pizza Delivery application was created using the MERN stack. It has a user as well as an admin module.',
     logo: '/project/mountpizza.png',
     tech: ['react', 'javascript', 'expressjs', 'nodejs', 'mongodb'],
     links: {
