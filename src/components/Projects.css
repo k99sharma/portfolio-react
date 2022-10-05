@@ -1,14 +1,15 @@
 .projects__title {
-  color: #023047;
+  color: #000000;
 }
 
-.project__thumbnail {
-  position: relative;
-  transform: translateX(40px);
-}
-
-.project:hover > .project__thumbnail {
-  transform: translateX(0px);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  transition: all 0.3s ease-out;
+.projectDetail {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }

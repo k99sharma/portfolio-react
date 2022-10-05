@@ -4,7 +4,7 @@ function SkillSet() {
     return <div className='skills grid grid-cols-1 md:grid-cols-2 text-center text-black rounded-xl drop-shadow'>
         <div className='skills__programming py-14 px-8 md:border-r-2  border-gray-200'>
             <div className='mb-8 flex justify-center items-center'>
-                <img width='100px' height='100px' src='/programming.png' alt='programming' />
+                <img width='100px' height='100px' src='/web/programming.png' alt='programming' />
             </div>
 
             <div className='skills__title text-font text-color my-6 text-xl font-bold'>
@@ -60,7 +60,7 @@ function SkillSet() {
 
         <div className='skills__development py-14 px-8'>
             <div className='mb-8 flex justify-center items-center'>
-                <img width='100px' height='100px' src='/development.png' alt='development' />
+                <img width='100px' height='100px' src='/web/development.png' alt='development' />
             </div>
 
             <div className='skills__title text-font text-color my-6 text-xl font-bold'>
@@ -118,13 +118,13 @@ function SkillSet() {
 function About() {
     return (
         <>
-            <div className='about pt-20 px-6 pb-54 text-white'>
+            <div className='about pt-20 px-6 pb-54 text-amber-500'>
                 <div className='m-3 flex flex-col justify-center items-center'>
                     <div className='mb-6 text-center text-font text-3xl font-bold'>
                         Hi, I'm Kalash. Nice to meet you.
                     </div>
 
-                    <div className='text-xl text-center w-9/12 lg:w-6/12 font-light'>
+                    <div className='text-xl text-center w-11/12 lg:w-6/12 font-light'>
                         I'm a self-taught developer. And love to experiment with new technologies. I'm quietly confident, naturally curious, and perpetually working on improving my skills. In my spare time I like building my own products.
                     </div>
                 </div>

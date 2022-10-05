@@ -7,31 +7,31 @@ function Copyright() {
         id: 0,
         name: 'twitter',
         address: 'https://twitter.com/kalashsharma99',
-        img: '/twitter.png'
+        img: '/social/twitter.png'
     },
     {
         id: 1,
         name: 'linkedin',
         address: 'https://www.linkedin.com/in/kalashsharma99/',
-        img: '/linkedin.png',
+        img: '/social/linkedin.png',
     },
     {
         id: 2,
         name: 'github',
         address: 'https://github.com/k99sharma',
-        img: '/github.png',
+        img: '/social/github.png',
     },
     {
         id: 3,
         name: 'mail',
         address: 'mailto:kalash.strt@gmail.com',
-        img: '/email.png',
+        img: '/social/email.png',
     },
     {
         id: 4,
         name: 'hashnode',
         address: 'https://kalashsharma.hashnode.dev/',
-        img: '/hashnode.png',
+        img: '/social/hashnode.png',
     }];
 
     return (
@@ -58,7 +58,7 @@ function Copyright() {
             <div className='home__last__copyright pt-4 px-6 pb-16'>
                 <div className='p-4'>
                     <div className='flex justify-center items-center'>
-                        <img width="50px" height="50px" src='/logo.png' alt='logo' />
+                        <img width="50px" height="50px" src='/web/logo.png' alt='logo' />
                     </div>
                 </div>
 

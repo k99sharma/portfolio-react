@@ -1,7 +1,6 @@
 .about {
   min-height: 20vh;
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  background-image: linear-gradient(315deg, #000000 0%, #2d3436 74%);
   position: relative;
   top: -114px;
 }
@@ -16,9 +15,9 @@
 }
 
 .text-color {
-  color: #141c3a;
+  color: #000000;
 }
 
 .text-color-2 {
-  color: #009ffd;
+  color: #ffb703;
 }

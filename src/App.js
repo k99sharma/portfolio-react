@@ -39,8 +39,8 @@ function App() {
         </BrowserRouter>
       </div>
 
-      <div onClick={topFunction} className={!display ? 'hidden' : 'fixed up-arrow p-2 bg-sky-300 shadow-lg cursor-pointer'}>
-        <img width="30px" height="30px" src='up.png' alt='up' />
+      <div onClick={topFunction} className={!display ? 'hidden' : 'fixed up-arrow p-2 bg-amber-500 shadow-lg cursor-pointer'}>
+        <img width="30px" height="30px" src='/web/up.png' alt='up' />
       </div>
     </>
 
