@@ -13,3 +13,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
+
+.projectDetail__container {
+  color: white;
+  background-image: linear-gradient(315deg, #000000 0%, #2d3436 74%);
+}

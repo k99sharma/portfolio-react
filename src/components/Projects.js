@@ -1,14 +1,14 @@
 import './Projects.css';
 import { useState } from 'react';
+import { techLinks } from '../utils/techLinks';
 
 // projects list
 const projects = [{
     id: 0,
     name: 'Pokedex',
     description: 'Pokedex is a React application. It fetches pokemon from an Open Pokedox API and displays them in the form of a grid. Other features includes searching and filtering.',
-    thumbnail: 'pokemon.png',
-    gif: '/gif/pokemon.gif',
     logo: '/project/pokemon.png',
+    tech: ['react', 'tailwind'],
     links: {
         github: 'https://github.com/k99sharma/pokemon-react',
         hosted: 'https://ghost32-pokemon.netlify.app/',
@@ -19,9 +19,8 @@ const projects = [{
     id: 1,
     name: 'Bifrost',
     description: 'Bifrost is a web application to visualize and locate different countries on 3D globe model. Globe is created in Three.js library and country data is fetched from a REST API.',
-    thumbnail: 'bifrost.png',
-    gif: '/gif/pokemon.gif',
     logo: '/project/bifrost.png',
+    tech: ['threejs', 'html5', 'css3', 'bootstrap'],
     links: {
         github: 'https://github.com/k99sharma/bifrost',
         hosted: 'https://ghost32-bifrost.netlify.app/',
@@ -32,9 +31,8 @@ const projects = [{
     id: 2,
     name: 'Planet Visualizer',
     description: 'I am description',
-    thumbnail: 'planet.png',
-    gif: '/gif/pokemon.gif',
     logo: '/project/planet.png',
+    tech: ['postman', 'html5', 'css3', 'javascript'],
     links: {
         github: 'https://github.com/k99sharma/planets-api',
         hosted: 'https://www.postman.com/winter-shuttle-180342/workspace/planet-visualizer/collection/13225438-fc6cdd38-795a-44a4-9db4-43abca2b0372?ctx=documentation',
@@ -45,9 +43,8 @@ const projects = [{
     id: 3,
     name: 'Mount Pizza',
     description: 'Mount Pizza is a web application ',
-    thumbnail: 'mountpizza.png',
-    gif: '/gif/pokemon.gif',
     logo: '/project/mountpizza.png',
+    tech: ['react', 'javascript', 'expressjs', 'nodejs', 'mongodb'],
     links: {
         github: 'https://github.com/k99sharma/OIBSIP',
         hosted: 'https://mountpizza.netlify.app',
@@ -64,43 +61,50 @@ function ProjectDetail(props) {
 
     return (
         <div className={`projectDetail flex justify-center items-center ${!props.show && 'hidden'}`}>
-            <div className='projectDetail__container bg-white w-11/12 lg:w-8/12 p-3 rounded-md'>
-                <div className='projectDetail__container__header flex items-center justify-between border-b-2 border-black pb-2 mb-2 px-2'>
-                    <div className='projectDetail__container__title flex items-center'>
-                        <div className='projectDetail__container__title_logo'>
-                            <img className='w-6 h-6 mr-2' src={`/project/${projects[props.id].thumbnail}`} alt='icon' />
-                        </div>
-                        <div className='projectDetail__container__title_text text-xl'>
-                            {
-                                projects[props.id].name
-                            }
-                        </div>
+            <div className='projectDetail__container rounded-lg grid grid-cols-1 md:grid-cols-2 w-11/12 lg:w-8/12'>
+                <div className={'projectDetail__container__illustration rounded-lg p-2 md:flex md:items-center md:justify-center ' + projects[props.id].bg}>
+                    <div className='projectDetail__container__illustration__header md:hidden flex items-center justify-end'>
+                        <img className='w-8 h-8' onClick={handleClose} src='/web/close.png' alt='close' />
                     </div>
-
-                    <div onClick={handleClose} className="projectDetail__container__close hover:cursor-pointer">
-                        <img className='w-8 h-8' src='/web/close.png' alt='close' />
+                    <div className='projectDetail__container__illustration__img flex items-center justify-center md:my-8'>
+                        <img className='w-20 h-20' src={projects[props.id].logo} alt={projects[props.id].name} />
                     </div>
                 </div>
 
+                <div className='projectDetail__container__detail p-2'>
+                    <div className='projectDetail__container__detail__header md:items-center md:justify-end hidden md:flex md:mb-2 mx-3'>
+                        <img className='w-8 h-8' onClick={handleClose} src='/web/close.png' alt='close' />
+                    </div>
 
-                <div className='projectDetail__container__description mb-2 px-2'>
-                    {
-                        projects[props.id].description
-                    }
-                </div>
+                    <div className='projectDetail__container__detail__title text-3xl p-3 text-amber-500'>
+                        {
+                            projects[props.id].name
+                        }
+                    </div>
 
-                <div className='projectDetail__container__gif flex justify-center my-5'>
-                    <img className='h-4/6 w-8/12' src={projects[props.id].gif} alt="gif" />
-                </div>
+                    <div className='projectDetail__container__detail__tech my-3 grid grid-cols-4'>
+                        {
+                            projects[props.id].tech.map(link => {
+                                return <img className='w-20 h-6 mb-2' key={link} src={techLinks[link]} alt='tech' />
+                            })
+                        }
+                    </div>
 
-                <div className="projectDetail__container__links flex justify-center items-center pt-2 border-t-2 border-black">
-                    <a href={projects[props.id].links.github} target="_blank" rel="noreferrer">
-                        <img className='h-6 w-6 mx-2' src='/social/github.png' alt='github' />
-                    </a>
+                    <div className='projectDetail__container__detail__description p-3'>
+                        {
+                            projects[props.id].description
+                        }
+                    </div>
 
-                    <a href={projects[props.id].links.hosted} target="_blank" rel="noreferrer">
-                        <img className='h-6 w-6 mx-2' src='/social/web.png' alt='github' />
-                    </a>
+                    <div className='projectDetail__container__detail__links flex py-2'>
+                        <a className='h-8 w-8 mx-2' href={projects[props.id].links.github} target='_blank' rel="noreferrer">
+                            <img src='/social/github.png' alt='github' />
+                        </a>
+
+                        <a className='h-8 w-8 mx-2' href={projects[props.id].links.hosted} target='_blank' rel="noreferrer">
+                            <img src='/social/web.png' alt='hosted' />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
