@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
 // importing components
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Contact from './components/Contact';
+import Navbar from './Navbar';
+import Home from './Home';
+import Contact from './Contact';
 
 import {
   BrowserRouter,
