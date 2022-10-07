@@ -72,7 +72,7 @@ function ProjectDetail(props) {
                 </div>
 
                 <div className='projectDetail__container__detail p-2'>
-                    <div className='projectDetail__container__detail__header md:items-center md:justify-end hidden md:flex md:mb-2 mx-3'>
+                    <div className='projectDetail__container__detail__header md:items-center md:justify-end hidden md:flex md:mb-2 mx-3 hover:cursor-pointer'>
                         <img className='w-8 h-8' onClick={handleClose} src='/web/close.png' alt='close' />
                     </div>
 
