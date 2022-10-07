@@ -85,7 +85,7 @@ function ProjectDetail(props) {
                     <div className='projectDetail__container__detail__tech my-3 grid grid-cols-4'>
                         {
                             projects[props.id].tech.map(link => {
-                                return <img className='w-20 h-6 mb-2' key={link} src={techLinks[link]} alt='tech' />
+                                return <img className='w-20 h-6 px-1 mb-2' key={link} src={techLinks[link]} alt='tech' />
                             })
                         }
                     </div>
