@@ -63,7 +63,7 @@ function ProjectDetail(props) {
         <div className={`projectDetail flex justify-center items-center ${!props.show && 'hidden'}`}>
             <div className='projectDetail__container rounded-lg grid grid-cols-1 md:grid-cols-2 w-11/12 lg:w-8/12'>
                 <div className={'projectDetail__container__illustration rounded-lg p-2 md:flex md:items-center md:justify-center ' + projects[props.id].bg}>
-                    <div className='projectDetail__container__illustration__header md:hidden flex items-center justify-end'>
+                    <div className='projectDetail__container__illustration__header md:hidden flex items-center justify-end hover:pointer-cursor'>
                         <img className='w-8 h-8' onClick={handleClose} src='/web/close.png' alt='close' />
                     </div>
                     <div className='projectDetail__container__illustration__img flex items-center justify-center md:my-8'>
