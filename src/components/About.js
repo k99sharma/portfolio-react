@@ -39,7 +39,7 @@ function SkillSet() {
 
             <div className='mb-9 text-lg flex flex-col items-center'>
                 <div className='shadow-lg my-2'>
-                    <a target='_blank' rel="noreferrer" href='https://leetcode.com/ghost_32/'>
+                    <a target='_blank' rel="noreferrer" href='https://leetcode.com/kalashsharma99/'>
                         <img width='150px' src='https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black' alt='leetcode' />
                     </a>
                 </div>
@@ -51,8 +51,8 @@ function SkillSet() {
                 </div>
 
                 <div className='shadow-lg my-2'>
-                    <a target='_blank' rel="noreferrer" href='https://codeforces.com/profile/kalash_strt'>
-                        <img width='150px' src='https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&logo=Codeforces&logoColor=white' alt='codeforces' />
+                    <a target='_blank' rel="noreferrer" href='https://auth.geeksforgeeks.org/user/kalashsharma99/practice/'>
+                        <img width='150px' src='https://img.shields.io/badge/GeeksforGeeks-gray?style=for-the-badge&logo=geeksforgeeks&logoColor=35914c' alt='codeforces' />
                     </a>
                 </div>
             </div>
