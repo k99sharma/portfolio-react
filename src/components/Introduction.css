@@ -1,16 +1,16 @@
-.introduction__title{
-    font-family: 'Libre Baskerville', serif;
-    font-size: 40px;
-    font-weight: bold;
-    color: #141C3A;
+.introduction__title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
 }
 
-.introduction__subtitle{
-    font-size: 20px;
-    font-weight: lighter;
+.introduction__subtitle {
+  font-size: 20px;
+  font-weight: lighter;
 }
 
-.illustration > img{
-    max-width: 600px;
-    height: auto;
+.illustration > img {
+  max-width: 600px;
+  height: auto;
 }
