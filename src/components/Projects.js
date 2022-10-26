@@ -1,6 +1,7 @@
 import './Projects.css';
 import { useState } from 'react';
 import { techLinks } from '../utils/techLinks';
+import Modal from './Modal';
 
 // projects list
 const projects = [{
@@ -60,7 +61,7 @@ function ProjectDetail(props) {
     }
 
     return (
-        <div className={`projectDetail flex justify-center items-center ${!props.show && 'hidden'}`}>
+        <div className='flex justify-center items-center'>
             <div className='projectDetail__container rounded-lg grid grid-cols-1 md:grid-cols-2 w-11/12 lg:w-8/12'>
                 <div className={'projectDetail__container__illustration rounded-lg p-2 md:flex md:items-center md:justify-center ' + projects[props.id].bg}>
                     <div className='projectDetail__container__illustration__header md:hidden flex items-center justify-end hover:cursor-pointer'>
@@ -82,10 +83,10 @@ function ProjectDetail(props) {
                         }
                     </div>
 
-                    <div className='projectDetail__container__detail__tech my-3 grid grid-cols-4'>
+                    <div className='projectDetail__container__detail__tech my-3 grid grid-cols-4 px-3'>
                         {
                             projects[props.id].tech.map(link => {
-                                return <img className='w-20 h-6 px-1 mb-2' key={link} src={techLinks[link]} alt='tech' />
+                                return <img className='h-8 w-24 mb-2' key={link} src={techLinks[link]} alt='tech' />
                             })
                         }
                     </div>
@@ -122,6 +123,15 @@ function Projects() {
 
     return (
         <>
+            {
+                showProject
+                    ?
+                    <Modal>
+                        <ProjectDetail show={showProject} id={projectId} setShowProject={setShowProject} setProjectId={setProjectId} />
+                    </Modal>
+                    :
+                    null
+            }
             <div className='projects py-20 px-6'>
                 <div className='projects__title pb-6 text-4xl font-bold text-font text-center'>
                     My Recent Work
@@ -130,8 +140,6 @@ function Projects() {
                 <div className='projects__subtitle pb-6 text-xl text-center font-light'>
                     Here are a few projects I've worked on recently.
                 </div>
-
-                <ProjectDetail show={showProject} id={projectId} setShowProject={setShowProject} setProjectId={setProjectId} />
 
                 <div className='projects__list py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                     {
