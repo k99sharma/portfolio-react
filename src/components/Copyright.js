@@ -82,7 +82,7 @@ function Copyright() {
                 </div>
 
                 <div className='text-white text-base text-center'>
-                    Handcrafted by me &copy; twentytwentytwo
+                    Handcrafted by me &copy; twentytwentythree
                 </div>
             </div>
         </div>
