@@ -84,7 +84,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer__copyright text-sm">Copyright © Kalash Sharma</div>
+      <div className="footer__copyright text-sm">
+        Copyright © {new Date().getFullYear()}. Designed & Build by
+        kalashsharma99
+      </div>
     </div>
   );
 }
