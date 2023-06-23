@@ -1,45 +1,50 @@
 // importing components
-import { Link } from "react-router-dom";
-import DarkModeButton from "../DarkModeButton/DarkModeButton";
+import SimpleButton from "../SimpleButton/SimpleButton";
+import Brand from "../../Brand/Brand";
+
+// link type
+type linkType = {
+  label: string;
+  path: string;
+  isURL: boolean;
+};
 
 // navlinks
-const navLinks = [{
-    label: 'Blog',
-    path: '/blog'
-},{
-    label: 'About',
-    path: '/about'
-},
-{
-    label: 'dark-mode',
-    path: '#'
-}];
+const navLinks: linkType[] = [
+  {
+    label: "Blog",
+    path: "/blog",
+    isURL: false,
+  },
+  {
+    label: "About",
+    path: "/about",
+    isURL: false,
+  },
+  {
+    label: "dark-mode",
+    path: "#",
+    isURL: false,
+  },
+];
 
 // navbar component
-export default function Navbar(){
-    return(
-        <div className="navbar flex justify-between">
-            <div className="navbar__brand">
-                <button type="button" role="button">
-                    <Link to="/">
-                        Brand
-                    </Link>
-                </button>
-            </div>
+export default function Navbar() {
+  return (
+    <div className="navbar flex justify-between">
+      <div className="navbar__brand">
+        <Brand />
+      </div>
 
-            <div className="navbar__links flex">
-                {
-                    navLinks.map(link => {
-                        return link.label === 'dark-mode' ? <DarkModeButton /> : <button type="button" role="navigation" className="navbar__links mx-2">
-                            <Link to={link.path}>
-                                {
-                                    link.label
-                                }
-                            </Link>
-                        </button>
-                    })
-                }
+      <div className="navbar__links flex">
+        {navLinks.map((link: linkType) => {
+          return (
+            <div key={link.label} className="mx-3">
+              <SimpleButton options={link} />
             </div>
-        </div>
-    );
+          );
+        })}
+      </div>
+    </div>
+  );
 }
