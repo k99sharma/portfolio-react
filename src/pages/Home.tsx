@@ -1,5 +1,6 @@
 // importing components
 import Divider from "../components/Divider/Divider.jsx";
+import IconButton from "../components/IconButton/IconButton.js";
 
 const socials = [
   {
@@ -35,24 +36,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="home__social mb-10">
+      <div className="home__social flex mb-10">
         {socials.map((social) => {
           return (
-            <button
-              className="socialButton mr-5"
-              key={social.label}
-              type="button"
-              role="button"
-            >
-              <a href={social.path} target="_blank">
-                <img
-                  width={20}
-                  height={20}
-                  src={social.img}
-                  alt={social.label}
-                />
-              </a>
-            </button>
+            <div className="socialButton mr-5" key={social.label}>
+              <IconButton>
+                <a href={social.path} target="_blank">
+                  <img
+                    width={18}
+                    height={18}
+                    src={social.img}
+                    alt={social.label}
+                  />
+                </a>
+              </IconButton>
+            </div>
           );
         })}
       </div>
