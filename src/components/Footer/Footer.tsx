@@ -37,12 +37,12 @@ const socials: linkType[] = [
   },
   {
     label: "GitHub",
-    path: "#",
+    path: "https://github.com/k99sharma",
     isURL: true,
   },
   {
     label: "LinkedIn",
-    path: "#",
+    path: "https://www.linkedin.com/in/kalashsharma99/",
     isURL: true,
   },
 ];
@@ -56,12 +56,12 @@ const showcase: linkType[] = [
   },
   {
     label: "Projects",
-    path: "#",
+    path: "/projects",
     isURL: false,
   },
   {
     label: "Hashnode",
-    path: "#",
+    path: "https://kalashsharma.hashnode.dev/",
     isURL: true,
   },
 ];
@@ -85,8 +85,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__copyright text-sm">
-        Copyright © {new Date().getFullYear()}. Designed & Build by
-        kalashsharma99
+        Copyright {new Date().getFullYear()} © Kalash Sharma
       </div>
     </div>
   );
