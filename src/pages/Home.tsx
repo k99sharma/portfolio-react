@@ -1,21 +1,22 @@
 // importing components
+import BlogList from "../components/BlogList/BlogList.js";
 import Divider from "../components/Divider/Divider.jsx";
 import IconButton from "../components/IconButton/IconButton.js";
 
 const socials = [
   {
     label: "github",
-    path: "#",
+    path: "https://github.com/k99sharma",
     img: "/assets/github.png",
   },
   {
     label: "linkedin",
-    path: "#",
+    path: "https://www.linkedin.com/in/kalashsharma99/",
     img: "/assets/linkedin.png",
   },
   {
     label: "blog",
-    path: "#",
+    path: "https://kalashsharma.hashnode.dev/",
     img: "/assets/blog.png",
   },
 ];
@@ -60,7 +61,9 @@ export default function Home() {
           LATEST BLOGS
         </div>
 
-        <div className="home__blog__"></div>
+        <div className="home__blog__">
+          <BlogList count={3} />
+        </div>
       </div>
 
       <div className="home__end">

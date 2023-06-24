@@ -37,12 +37,12 @@ const socials: linkType[] = [
   },
   {
     label: "GitHub",
-    path: "#",
+    path: "https://github.com/k99sharma",
     isURL: true,
   },
   {
     label: "LinkedIn",
-    path: "#",
+    path: "https://www.linkedin.com/in/kalashsharma99/",
     isURL: true,
   },
 ];
@@ -56,12 +56,12 @@ const showcase: linkType[] = [
   },
   {
     label: "Projects",
-    path: "#",
+    path: "/projects",
     isURL: false,
   },
   {
     label: "Hashnode",
-    path: "#",
+    path: "https://kalashsharma.hashnode.dev/",
     isURL: true,
   },
 ];
