@@ -6,7 +6,7 @@ import Divider from "../components/Divider/Divider.jsx";
 export default function About() {
   return (
     <div className="about">
-      <div className="about__header font-semibold">ABOUT ME</div>
+      <div className="about__header font-bold heading text-2xl">ABOUT ME</div>
 
       <div className="about__image my-5 flex items-center justify-center">
         <img
@@ -23,7 +23,7 @@ export default function About() {
       <Divider />
 
       <div className="about__cta">
-        <div className="about__cta__header font-semibold mb-5">
+        <div className="about__cta__header font-bold heading mb-5 text-lg">
           GET IN TOUCH
         </div>
 

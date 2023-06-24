@@ -11,7 +11,7 @@ export default function IconButton({ children }: IconButtonPropType) {
     <button
       role="button"
       type="button"
-      className="iconButton hover:bg-slate-200 md:p-1 hover:rounded-md"
+      className="iconButton hover:bg-zinc-200 md:p-2 hover:rounded-md"
     >
       {children}
     </button>

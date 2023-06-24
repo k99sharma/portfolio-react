@@ -103,7 +103,7 @@ function BlogView({ blogs }: blogViewPropType) {
           {blogs.map((blog) => {
             return (
               <div key={blog.title} className="blog my-3">
-                <div className="blog__button font-semibold w-full">
+                <div className="blog__button heading w-full">
                   <button role="button" type="button">
                     <a target="_blank" href={blog.url}>
                       <p className="text-left">{blog.title}</p>
@@ -111,7 +111,7 @@ function BlogView({ blogs }: blogViewPropType) {
                   </button>
                 </div>
 
-                <div className="blog__date text-zinc-400 font-thin text-sm">
+                <div className="blog__date text-slate-600 font-extralight text-sm">
                   {blog.publishDate}
                 </div>
               </div>
@@ -119,7 +119,7 @@ function BlogView({ blogs }: blogViewPropType) {
           })}
         </div>
       ) : (
-        <div className="blogView__empty text-sm">
+        <div className="blogView__empty heading text-sm">
           No blogs to be found. Stay tuned for upcoming articles!
         </div>
       )}

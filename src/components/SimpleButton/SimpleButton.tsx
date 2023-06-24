@@ -15,14 +15,22 @@ export default function SimpleButton(_props: { options: optionsType }) {
   return (
     <>
       {options.isURL ? (
-        <button className="simpleButton mb-4" type="button" role="button">
+        <button
+          className="simpleButton mb-4 text-md font-extralight text-slate-600 hover:text-black"
+          type="button"
+          role="button"
+        >
           <a href={options.path} target="_blank">
             {options.label}
           </a>
         </button>
       ) : (
         <Link to={options.path}>
-          <button className="simpleButton mb-4" type="button" role="navigation">
+          <button
+            className="simpleButton mb-4 text-md font-extralight text-slate-600 hover:text-black"
+            type="button"
+            role="navigation"
+          >
             {options.label}
           </button>
         </Link>

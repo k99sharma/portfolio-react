@@ -26,13 +26,13 @@ export default function Home() {
   return (
     <div className="home">
       <div className="home__header">
-        <div className="home__header__heading text-4xl font-bold mb-1">
+        <div className="home__header__heading text-4xl font-bold mb-1 heading">
           Kalash Sharma
         </div>
         <div className="home__header__subheading mb-2">
           developer · mentor · blogger
         </div>
-        <div className="home__header__introduction text-lg my-5">
+        <div className="home__header__introduction text-lg my-5 subheading">
           I 💚 to develop & build things.
         </div>
       </div>
@@ -57,11 +57,11 @@ export default function Home() {
       </div>
 
       <div className="home__blog">
-        <div className="home__blog__header my-5 font-semibold">
+        <div className="home__blog__header my-5 font-bold heading text-lg">
           LATEST BLOGS
         </div>
 
-        <div className="home__blog__">
+        <div className="home__blog__list">
           <BlogList count={3} />
         </div>
       </div>
