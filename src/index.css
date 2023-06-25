@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html{
+    background-color: black;
+}
+
+.heading{
+    font-family: 'Oswald', sans-serif;
+}
+
+.subheading{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content{
+    font-family: 'PT Sans', sans-serif;
+}

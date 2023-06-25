@@ -1,11 +1,11 @@
 // importing components
-import Layout from "../Layout/Layout"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Layout from "../Layout/Layout";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // importing pages
-import Home from "../../pages/Home"
-import Blog from "../../pages/Blog"
-import About from "../../pages/About"
+import Home from "../../pages/Home";
+import Blog from "../../pages/Blog";
+import About from "../../pages/About";
 
 // app component
 function App() {
@@ -19,7 +19,7 @@ function App() {
         </Routes>
       </Layout>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
