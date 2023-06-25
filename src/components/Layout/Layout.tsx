@@ -27,7 +27,7 @@ export default function Layout({ children }: LayoutProp) {
           : "bg-gradient-to-b from-zinc-50 to-neutral-200"
       }`}
     >
-      <div className="w-full sm:w-2/4 p-5">
+      <div className="w-full sm:w-3/4 md:w-2/4 p-5">
         <div className="layout__navbar mb-10">
           <Navbar />
         </div>

@@ -15,7 +15,7 @@ export default function About() {
   return (
     <div className="about">
       <div
-        className={`about__header font-bold heading text-2xl ${
+        className={`about__header font-bold heading text-xl ${
           theme === "dark" ? "text-amber-500" : "text-cyan-700"
         }`}
       >

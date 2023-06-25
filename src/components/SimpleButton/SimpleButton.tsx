@@ -24,7 +24,7 @@ export default function SimpleButton(_props: { options: optionsType }) {
     <>
       {options.isURL ? (
         <button
-          className={`simpleButton mb-4 text-md font-extralight text-slate-600 ${
+          className={`simpleButton mb-4 text-md font-extralight text-slate-700 ${
             theme === "light"
               ? "hover:text-neutral-900"
               : "hover:text-slate-300"
@@ -39,7 +39,7 @@ export default function SimpleButton(_props: { options: optionsType }) {
       ) : (
         <Link to={options.path}>
           <button
-            className={`simpleButton mb-4 text-md font-extralight text-slate-600 ${
+            className={`simpleButton mb-4 text-md font-extralight text-slate-700 ${
               theme === "light"
                 ? "hover:text-neutral-900"
                 : "hover:text-slate-300"

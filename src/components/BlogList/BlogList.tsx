@@ -109,7 +109,7 @@ function BlogView({ blogs }: blogViewPropType) {
         <div className="blogView">
           {blogs.map((blog) => {
             return (
-              <div key={blog.title} className="blog my-3">
+              <div key={blog.title} className="blog my-5">
                 <div className="blog__button subheading w-full">
                   <button role="button" type="button">
                     <a target="_blank" href={blog.url}>
