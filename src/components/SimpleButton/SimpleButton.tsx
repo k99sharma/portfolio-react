@@ -1,5 +1,9 @@
 // importing components
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+
+// context
+import ThemeContext from "../../context/ThemeContext";
 
 // simple button component
 type optionsType = {
@@ -12,11 +16,19 @@ export default function SimpleButton(_props: { options: optionsType }) {
   // destructuring props
   const { options } = _props;
 
+  // theme context
+  const themeCtx = useContext(ThemeContext);
+  const { theme } = themeCtx;
+
   return (
     <>
       {options.isURL ? (
         <button
-          className="simpleButton mb-4 text-md font-extralight text-slate-600 hover:text-black"
+          className={`simpleButton mb-4 text-md font-extralight text-slate-600 ${
+            theme === "light"
+              ? "hover:text-neutral-900"
+              : "hover:text-slate-300"
+          }`}
           type="button"
           role="button"
         >
@@ -27,7 +39,11 @@ export default function SimpleButton(_props: { options: optionsType }) {
       ) : (
         <Link to={options.path}>
           <button
-            className="simpleButton mb-4 text-md font-extralight text-slate-600 hover:text-black"
+            className={`simpleButton mb-4 text-md font-extralight text-slate-600 ${
+              theme === "light"
+                ? "hover:text-neutral-900"
+                : "hover:text-slate-300"
+            }`}
             type="button"
             role="navigation"
           >

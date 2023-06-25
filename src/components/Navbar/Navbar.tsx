@@ -1,6 +1,7 @@
 // importing components
 import SimpleButton from "../SimpleButton/SimpleButton";
-import Brand from "../../Brand/Brand";
+import Banner from "../Banner/Banner";
+import DarkModeButton from "../DarkModeButton/DarkModeButton";
 
 // link type
 type linkType = {
@@ -21,29 +22,30 @@ const navLinks: linkType[] = [
     path: "/about",
     isURL: false,
   },
-  {
-    label: "dark-mode",
-    path: "#",
-    isURL: false,
-  },
 ];
 
 // navbar component
 export default function Navbar() {
   return (
-    <div className="navbar flex justify-between">
-      <div className="navbar__brand">
-        <Brand />
+    <div className="navbar flex items-center justify-between">
+      <div className="navbar__banner">
+        <Banner />
       </div>
 
-      <div className="navbar__links flex">
-        {navLinks.map((link: linkType) => {
-          return (
-            <div key={link.label} className="mx-3">
-              <SimpleButton options={link} />
-            </div>
-          );
-        })}
+      <div className="navbar__links flex items-center">
+        <>
+          {navLinks.map((link: linkType) => {
+            return (
+              <div key={link.label} className="mx-3">
+                <SimpleButton options={link} />
+              </div>
+            );
+          })}
+
+          <div className="navbar__darkMode">
+            <DarkModeButton />
+          </div>
+        </>
       </div>
     </div>
   );

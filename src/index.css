@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=PT+Sans&display=swap');
+html{
+    background-color: black;
+}
 
 .heading{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .subheading{

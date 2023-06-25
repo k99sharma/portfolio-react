@@ -1,8 +1,11 @@
 // importing components
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 
 // helper functions
 import { formatBlogDate } from "../../utils/helper";
+
+// importing context
+import ThemeContext from "../../context/ThemeContext";
 
 // prop type
 type blogListPropType = {
@@ -96,6 +99,10 @@ type blogViewPropType = {
 
 // blog view component
 function BlogView({ blogs }: blogViewPropType) {
+  // theme context
+  const themeCtx = useContext(ThemeContext);
+  const { theme } = themeCtx;
+
   return (
     <>
       {blogs.length !== 0 ? (
@@ -103,15 +110,17 @@ function BlogView({ blogs }: blogViewPropType) {
           {blogs.map((blog) => {
             return (
               <div key={blog.title} className="blog my-3">
-                <div className="blog__button heading w-full">
+                <div className="blog__button subheading w-full">
                   <button role="button" type="button">
                     <a target="_blank" href={blog.url}>
-                      <p className="text-left">{blog.title}</p>
+                      <p className={theme === "dark" ? "text-zinc-200" : ""}>
+                        {blog.title}
+                      </p>
                     </a>
                   </button>
                 </div>
 
-                <div className="blog__date text-slate-600 font-extralight text-sm">
+                <div className="blog__date text-neutral-500 font-extralight text-sm">
                   {blog.publishDate}
                 </div>
               </div>
