@@ -15,13 +15,17 @@ export default function Blog() {
   return (
     <div className="blog">
       <div
-        className={`blog__header font-bold heading text-xl ${
+        className={`blog__header font-bold heading text-2xl ${
           theme === "dark" ? "text-amber-500" : "text-cyan-700"
         }`}
       >
         BLOGS
       </div>
-      <div className="blog__subheader my-2 subheading text-sm text-slate-600">
+      <div
+        className={`blog__subheader my-2 subheading text-md ${
+          theme === "dark" ? "text-slate-300" : "text-slate-600"
+        } `}
+      >
         Insights and Perspectives from personal adventures
       </div>
       <div className="blog__blog-list my-8">

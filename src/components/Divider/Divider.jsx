@@ -12,7 +12,7 @@ export default function Divider(){
 
     return(
         <div className="divider my-14 flex items-center justify-center">
-            <hr className={`${theme === "dark" ? "border-amber-500" : "border-zinc-800"} w-16`} />
+            <hr className={`${theme === "dark" ? "border-amber-500" : "border-cyan-700"} w-16`} />
         </div>
     )
 }

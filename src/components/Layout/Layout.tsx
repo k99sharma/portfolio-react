@@ -23,7 +23,7 @@ export default function Layout({ children }: LayoutProp) {
     <div
       className={`layout flex justify-center items-center content select-none min-h-full ${
         theme === "dark"
-          ? "bg-gradient-to-b from-zinc-950 to-neutral-950"
+          ? "bg-gradient-to-b bg-neutral-950"
           : "bg-gradient-to-b from-zinc-50 to-neutral-200"
       }`}
     >

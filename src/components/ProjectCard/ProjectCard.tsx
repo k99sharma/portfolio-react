@@ -30,7 +30,7 @@ export default function ProjectCard(_props: { data: projectType }) {
   const { theme } = themeCtx;
 
   return (
-    <div className="projectCard flex items-center mb-10">
+    <div className="projectCard flex flex-col md:flex-row items-center mb-10">
       <div className="projectCard__thumbnail mb-10 md:mb-0">
         <img
           className="rounded-md w-28 h-28 md:w-36 md:h-36 border-2 border-neutral-900"
@@ -49,7 +49,7 @@ export default function ProjectCard(_props: { data: projectType }) {
         </div>
 
         <div
-          className={`projectCard__details__description text-lg mb-4 ${
+          className={`projectCard__details__description content text-md mb-4 ${
             theme === "dark" ? "text-zinc-200" : ""
           }`}
         >
@@ -66,7 +66,7 @@ export default function ProjectCard(_props: { data: projectType }) {
           </div>
 
           <div
-            className={`projectCard__details__tech__detail ${
+            className={`projectCard__details__tech__detail content ${
               theme === "dark" ? "text-zinc-200" : ""
             }`}
           >

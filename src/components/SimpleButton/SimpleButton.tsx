@@ -24,10 +24,10 @@ export default function SimpleButton(_props: { options: optionsType }) {
     <>
       {options.isURL ? (
         <button
-          className={`simpleButton mb-4 text-md font-extralight text-slate-700 ${
+          className={`simpleButton mb-4 text-md font-extralight ${
             theme === "light"
-              ? "hover:text-neutral-900"
-              : "hover:text-slate-300"
+              ? "text-slate-600 hover:text-neutral-900"
+              : "text-gray-500 hover:text-slate-300"
           }`}
           type="button"
           role="button"
@@ -39,10 +39,10 @@ export default function SimpleButton(_props: { options: optionsType }) {
       ) : (
         <Link to={options.path}>
           <button
-            className={`simpleButton mb-4 text-md font-extralight text-slate-700 ${
+            className={`simpleButton mb-4 text-md font-extralight ${
               theme === "light"
-                ? "hover:text-neutral-900"
-                : "hover:text-slate-300"
+                ? "text-slate-600 hover:text-neutral-900"
+                : "text-gray-500 hover:text-slate-300"
             }`}
             type="button"
             role="navigation"

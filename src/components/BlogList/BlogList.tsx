@@ -110,8 +110,16 @@ function BlogView({ blogs }: blogViewPropType) {
           {blogs.map((blog) => {
             return (
               <div key={blog.title} className="blog my-5">
-                <div className="blog__button subheading w-full">
-                  <button role="button" type="button">
+                <div className="blog__button subheading mb-1 w-full">
+                  <button
+                    className={`hover:border-b-2 ${
+                      theme === "dark"
+                        ? "hover:border-amber-500"
+                        : "hover:border-cyan-700"
+                    }`}
+                    role="button"
+                    type="button"
+                  >
                     <a target="_blank" href={blog.url}>
                       <p className={theme === "dark" ? "text-zinc-200" : ""}>
                         {blog.title}

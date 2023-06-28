@@ -23,7 +23,7 @@ export default function Home() {
         <div
           className={`${
             theme === "dark" ? "text-zinc-200" : ""
-          } home__header__heading text-4xl mb-1 heading font-bold`}
+          } home__header__heading text-5xl mb-1 heading font-bold`}
         >
           Kalash Sharma
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
           <a href="https://github.com/k99sharma" target="_blank">
             <IconButton>
               <FaGithub
-                className={`${theme === "dark" ? "text-zinc-200" : ""} w-4 h-4`}
+                className={`${theme === "dark" ? "text-zinc-200" : ""} w-5 h-5`}
               />
             </IconButton>
           </a>
@@ -58,7 +58,7 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/kalashsharma99/" target="_blank">
             <IconButton>
               <FaLinkedin
-                className={`${theme === "dark" ? "text-zinc-200" : ""} w-4 h-4`}
+                className={`${theme === "dark" ? "text-zinc-200" : ""} w-5 h-5`}
               />
             </IconButton>
           </a>
@@ -68,7 +68,7 @@ export default function Home() {
           <a href="https://kalashsharma.hashnode.dev/" target="_blank">
             <IconButton>
               <FaFeather
-                className={`${theme === "dark" ? "text-white" : ""} w-4 h-4`}
+                className={`${theme === "dark" ? "text-white" : ""} w-5 h-5`}
               />
             </IconButton>
           </a>
@@ -79,7 +79,7 @@ export default function Home() {
         <div
           className={`${
             theme === "dark" ? "text-amber-500" : "text-cyan-700"
-          } home__blog__header my-5 font-semibold heading text-lg`}
+          } home__blog__header my-5 font-semibold heading text-2xl`}
         >
           LATEST BLOGS
         </div>

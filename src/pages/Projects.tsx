@@ -75,13 +75,17 @@ export default function Projects() {
   return (
     <div className="blog">
       <div
-        className={`projects__header font-bold heading text-xl ${
+        className={`projects__header font-bold heading text-2xl ${
           theme === "dark" ? "text-amber-500" : "text-cyan-700"
         }`}
       >
         My Recent Work
       </div>
-      <div className="projects__subheader my-2 subheading text-sm text-slate-600">
+      <div
+        className={`projects__subheader my-2 subheading text-md text-slate-600 ${
+          theme === "dark" ? "text-slate-300" : "text-slate-600"
+        }`}
+      >
         Here are few projects I've worked on recently
       </div>
 
