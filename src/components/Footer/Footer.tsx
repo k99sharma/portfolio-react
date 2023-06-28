@@ -1,6 +1,9 @@
 // importing components
-import { Link } from "react-router-dom";
 import SimpleButton from "../SimpleButton/SimpleButton";
+import { useContext } from "react";
+
+// importing context
+import ThemeContext from "../../context/ThemeContext";
 
 // link type
 type linkType = {
@@ -68,6 +71,10 @@ const showcase: linkType[] = [
 
 // footer component
 export default function Footer() {
+  // theme context
+  const themeCtx = useContext(ThemeContext);
+  const { theme } = themeCtx;
+
   return (
     <div className="footer my-5">
       <div className="footer__buttons grid grid-cols-3 my-5">
@@ -84,7 +91,11 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer__copyright text-sm font-extralight text-slate-600">
+      <div
+        className={`footer__copyright text-sm font-extralight ${
+          theme === "dark" ? "text-gray-500" : "text-slate-600 "
+        }`}
+      >
         Copyright {new Date().getFullYear()} © Kalash Sharma
       </div>
     </div>

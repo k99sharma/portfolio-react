@@ -114,7 +114,7 @@ function BlogView({ blogs }: blogViewPropType) {
                   <button
                     className={`hover:border-b-2 ${
                       theme === "dark"
-                        ? "hover:border-amber-500"
+                        ? "hover:border-red-600"
                         : "hover:border-cyan-700"
                     }`}
                     role="button"
@@ -136,7 +136,11 @@ function BlogView({ blogs }: blogViewPropType) {
           })}
         </div>
       ) : (
-        <div className="blogView__empty heading text-sm">
+        <div
+          className={`blogView__empty heading content text-md ${
+            theme === "dark" ? "text-zinc-200" : ""
+          }`}
+        >
           No blogs to be found. Stay tuned for upcoming articles!
         </div>
       )}

@@ -5,9 +5,13 @@ import { Link } from "react-router-dom";
 export default function Banner() {
   return (
     <div className="banner text-lg">
-      <Link to="/">
-        <button type="button" role="button">
-          <img src="/assets/logo.png" height={40} width={40} alt="logo" />
+      <Link className="flex items-center justify-center" to="/">
+        <button
+          className="bg-zinc-300 rounded-full p-1"
+          type="button"
+          role="button"
+        >
+          <img src="/assets/logo.png" height={30} width={30} alt="logo" />
         </button>
       </Link>
     </div>

@@ -16,7 +16,7 @@ export default function Blog() {
     <div className="blog">
       <div
         className={`blog__header font-bold heading text-2xl ${
-          theme === "dark" ? "text-amber-500" : "text-cyan-700"
+          theme === "dark" ? "text-red-600" : "text-cyan-700"
         }`}
       >
         BLOGS

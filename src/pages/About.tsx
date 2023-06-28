@@ -16,7 +16,7 @@ export default function About() {
     <div className="about">
       <div
         className={`about__header font-bold heading text-2xl ${
-          theme === "dark" ? "text-amber-500" : "text-cyan-700"
+          theme === "dark" ? "text-red-600" : "text-cyan-700"
         }`}
       >
         ABOUT ME
@@ -41,7 +41,7 @@ export default function About() {
       <div className="about__cta">
         <div
           className={`about__cta__header font-bold heading mb-5 text-lg ${
-            theme === "dark" ? "text-amber-500" : "text-cyan-700"
+            theme === "dark" ? "text-red-600" : "text-cyan-700"
           }`}
         >
           GET IN TOUCH

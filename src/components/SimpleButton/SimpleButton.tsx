@@ -31,6 +31,7 @@ export default function SimpleButton(_props: { options: optionsType }) {
           }`}
           type="button"
           role="button"
+          aria-label={options.label}
         >
           <a href={options.path} target="_blank">
             {options.label}
@@ -46,6 +47,7 @@ export default function SimpleButton(_props: { options: optionsType }) {
             }`}
             type="button"
             role="navigation"
+            aria-label={options.label}
           >
             {options.label}
           </button>

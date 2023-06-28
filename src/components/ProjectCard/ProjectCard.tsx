@@ -42,7 +42,7 @@ export default function ProjectCard(_props: { data: projectType }) {
       <div className="projectCard__details w-5/6 ml-10">
         <div
           className={`projectCard__details__title text-2xl heading mb-2 ${
-            theme === "dark" ? "text-amber-500" : "text-sky-700"
+            theme === "dark" ? "text-red-600" : "text-sky-700"
           }`}
         >
           {data.title}
@@ -59,7 +59,7 @@ export default function ProjectCard(_props: { data: projectType }) {
         <div className="projectCard__details__tech mb-3">
           <div
             className={`projectCard__details__tech__header mb-1 subheading font-semibold ${
-              theme === "dark" ? "text-amber-500" : "text-cyan-700"
+              theme === "dark" ? "text-red-600" : "text-cyan-700"
             }`}
           >
             Tech Used

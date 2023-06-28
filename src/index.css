@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans&family=Roboto&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,7 +13,8 @@ html{
 }
 
 .subheading{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .content{
