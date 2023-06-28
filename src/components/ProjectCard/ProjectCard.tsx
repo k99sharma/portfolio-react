@@ -33,7 +33,7 @@ export default function ProjectCard(_props: { data: projectType }) {
     <div className="projectCard flex items-center mb-10">
       <div className="projectCard__thumbnail mb-10 md:mb-0">
         <img
-          className="rounded-md w-28 h-28 md:w-36 md:h-36"
+          className="rounded-md w-28 h-28 md:w-36 md:h-36 border-2 border-neutral-900"
           src={data.thumbnail}
           alt={data.title}
         />
