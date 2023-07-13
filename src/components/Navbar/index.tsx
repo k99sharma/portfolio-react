@@ -1,10 +1,10 @@
 // importing types
-import { NavLinkType } from "../../types/types";
+import { LinkType } from "../../types/types";
 import Banner from "../Banner";
 import CustomLink from "../CustomLink";
 
 // nav links
-const navLinks: NavLinkType[] = [
+const navLinks: LinkType[] = [
   {
     label: "About",
     path: "/about",
@@ -21,7 +21,7 @@ const navLinks: NavLinkType[] = [
 function NavLinks() {
   return (
     <div className="navlinks flex items-center">
-      {navLinks.map((navLink: NavLinkType) => {
+      {navLinks.map((navLink: LinkType) => {
         return (
           <div key={navLink.label} className="navLink mx-2 md:mx-5">
             <CustomLink {...navLink} />
@@ -33,7 +33,7 @@ function NavLinks() {
 }
 
 // navbar component
-export function Navbar() {
+export default function Navbar() {
   return (
     <div className="navbar flex items-center justify-between my-10">
       <Banner />
