@@ -8,7 +8,7 @@ import { NavLinkType } from "../../types/types";
 export default function CustomLink({ label, path, isLink }: NavLinkType) {
   return isLink ? (
     <button
-      className="customLink text-neutral-4 hover:text-neutral-6 font-light text-sm font-montserrat"
+      className="customLink text-neutral-4 hover:text-neutral-6 text-sm font-light font-montserrat"
       type="button"
       role="button"
       aria-label={label}
@@ -19,7 +19,7 @@ export default function CustomLink({ label, path, isLink }: NavLinkType) {
     </button>
   ) : (
     <button
-      className="customButton text-neutral-4 hover:text-neutral-6 font-light text-sm font-montserrat"
+      className="customButton text-neutral-4 hover:text-neutral-6 text-sm font-light font-montserrat"
       type="button"
       role="navigation"
       aria-label={label}
