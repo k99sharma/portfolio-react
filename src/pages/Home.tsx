@@ -15,14 +15,14 @@ export default function Home() {
     <div className="home my-10">
       {/* header */}
       <div className="home__header mb-10">
-        <div className="home__header__heading text-neutral-7 text-4xl md:text-5xl lg:text-6xl font-bold mb-1">
+        <div className="home__header__heading text-neutral-7 text-4xl md:text-5xl font-bold mb-1">
           Kalash Sharma
         </div>
         <div className="home__header__subheading text-neutral-4 font-thin text-xs md:text-base mb-10">
           developer . blogger . open source enthusiast
         </div>
 
-        <div className="home__tagline text-md md:text-xl font-light text-neutral-5">
+        <div className="home__tagline text-md md:text-xl text-neutral-5 font-thin">
           I 💛 to develop &{" "}
           <span className="hover:border-b-2 text-secondary-4">
             <Link to="/projects">build</Link>
@@ -57,7 +57,7 @@ export default function Home() {
       </div>
 
       {/* blog section */}
-      <BlogContainer />
+      <BlogContainer count={3} />
     </div>
   );
 }

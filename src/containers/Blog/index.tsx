@@ -8,7 +8,7 @@ import { BlogType } from "../../types/types";
 import BlogView from "../../components/BlogView";
 
 // blog container
-export default function BlogContainer() {
+export default function BlogContainer({ count = -1 }: { count?: number }) {
   // states
   const [blogsData, setBlogsData] = useState<{
     blogs: BlogType[];
@@ -56,14 +56,20 @@ export default function BlogContainer() {
         .then((res) => res.json())
         .then((res) => res.data.user.publication.posts)
         .then((data: BlogType[]) => {
-          setBlogsData({ blogs: data, error: false }); // set blogs data
+          // if no count is provided
+          if (count !== -1) {
+            const blogs = data.slice(0, count);
+            setBlogsData({ blogs: blogs, error: false });
+          } else {
+            setBlogsData({ blogs: data, error: false }); // set blogs data
+          }
+
           setIsSubmitting(false); // not fetching
         })
         .catch((err) => {
           throw err;
         });
     } catch (err) {
-      console.log(err);
       setBlogsData({ blogs: [], error: true }); // set blogs to empty
       setIsSubmitting(false); // not fetching
     }
