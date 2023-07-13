@@ -5,3 +5,10 @@ import { ReactNode } from "react";
 export type LayoutPropType = {
     children: ReactNode;
 }
+
+// nav link types
+export type NavLinkType = {
+    label: string;
+    path: string;
+    isLink: boolean;
+}
