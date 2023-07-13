@@ -60,7 +60,7 @@ const socialOptions: LinkType[] = [
 // footer component
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer mb-5">
       <div className="footer__links flex justify-between mb-5">
         <div className="footer__pages">
           {pagesOptions.map((navLink: LinkType) => {
