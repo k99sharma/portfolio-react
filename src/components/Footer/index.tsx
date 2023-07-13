@@ -1,9 +1,9 @@
 // importing types
-import { NavLinkType } from "../../types/types";
+import { LinkType } from "../../types/types";
 import CustomLink from "../CustomLink";
 
 // available options
-const pagesOptions: NavLinkType[] = [
+const pagesOptions: LinkType[] = [
   {
     label: "Home",
     path: "/",
@@ -21,7 +21,7 @@ const pagesOptions: NavLinkType[] = [
   },
 ];
 
-const skillsOptions: NavLinkType[] = [
+const skillsOptions: LinkType[] = [
   {
     label: "Projects",
     path: "/projects",
@@ -39,7 +39,7 @@ const skillsOptions: NavLinkType[] = [
   },
 ];
 
-const socialOptions = [
+const socialOptions: LinkType[] = [
   {
     label: "Email",
     path: "mailto:kalash.strt@gmail.com",
@@ -58,12 +58,12 @@ const socialOptions = [
 ];
 
 // footer component
-export function Footer() {
+export default function Footer() {
   return (
     <div className="footer">
       <div className="footer__links flex justify-between mb-5">
         <div className="footer__pages">
-          {pagesOptions.map((navLink: NavLinkType) => {
+          {pagesOptions.map((navLink: LinkType) => {
             return (
               <div key={navLink.label} className="navLink my-5">
                 <CustomLink {...navLink} />
@@ -73,7 +73,7 @@ export function Footer() {
         </div>
 
         <div className="footer__skills">
-          {skillsOptions.map((navLink: NavLinkType) => {
+          {skillsOptions.map((navLink: LinkType) => {
             return (
               <div key={navLink.label} className="navLink my-5">
                 <CustomLink {...navLink} />
@@ -83,7 +83,7 @@ export function Footer() {
         </div>
 
         <div className="footer__social">
-          {socialOptions.map((navLink: NavLinkType) => {
+          {socialOptions.map((navLink: LinkType) => {
             return (
               <div key={navLink.label} className="navLink my-5">
                 <CustomLink {...navLink} />

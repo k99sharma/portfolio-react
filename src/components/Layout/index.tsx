@@ -1,6 +1,7 @@
 // importing components
-import { Navbar } from "../Navbar";
-import { Footer } from "../Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import Divider from "../Divider";
 
 // importing types
 import { LayoutPropType } from "../../types/types";
@@ -12,6 +13,8 @@ export default function Layout({ children }: LayoutPropType) {
       <div className="w-5/6 md:w-3/6">
         <Navbar />
         {children}
+        {/* divider */}
+        <Divider />
         <Footer />
       </div>
     </div>

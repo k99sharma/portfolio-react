@@ -7,8 +7,24 @@ export type LayoutPropType = {
 }
 
 // nav link types
-export type NavLinkType = {
+export type LinkType = {
     label: string;
     path: string;
     isLink: boolean;
+    icon?:string
+}
+
+// blog type
+export type BlogType = {
+    slug: string;
+    title: string;
+    brief: string;
+    coverImage: string;
+    dateAdded: string;
+}
+
+// blog container prop type
+export type BlogContainerPropType = {
+    blogs: BlogType[];
+    error?: boolean;
 }
