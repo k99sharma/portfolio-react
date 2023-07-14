@@ -32,11 +32,6 @@ const skillsOptions: LinkType[] = [
     path: "#",
     isLink: true,
   },
-  {
-    label: "Contact",
-    path: "/contact",
-    isLink: false,
-  },
 ];
 
 const socialOptions: LinkType[] = [

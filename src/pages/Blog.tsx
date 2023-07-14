@@ -8,8 +8,8 @@ export default function Blog() {
         <BlogContainer />
       </div>
 
-      <div className="blog__illustration hidden lg:flex lg:items-center lg:justify-center">
-        <img src="/blogImg.svg" alt="blog" />
+      <div className="blog__illustration hidden lg:flex lg:items-start lg:justify-center">
+        <img height={250} width={250} src="/blogImg.svg" alt="blog" />
       </div>
     </div>
   );
