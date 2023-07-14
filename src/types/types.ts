@@ -28,3 +28,13 @@ export type BlogContainerPropType = {
     blogs: BlogType[];
     error?: boolean;
 }
+
+// project type
+export type ProjectType = {
+    title: string;
+    description: string;
+    github: string;
+    live: string;
+    tech: string;
+    thumbnail: string;
+}
