@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Project from "./pages/Projects";
+import NotFound from "./pages/notFound";
 
 // app component
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/projects" element={<Project />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </Router>
