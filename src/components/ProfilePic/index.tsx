@@ -17,8 +17,8 @@ export default function ProfilePic() {
         >
           <img
             className="rounded-full"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             src="/photo.jpg"
             alt="profile pic"
           />
