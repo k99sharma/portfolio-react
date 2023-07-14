@@ -37,7 +37,7 @@ export default function BlogView({
                   </div>
 
                   <a
-                    className=" text-neutral-7 text-sm md:text-md md:text-lg font-thin text-left"
+                    className=" text-neutral-7 text-base md:text-lg text-left"
                     href={`https://kalashsharma.hashnode.dev/${blog.slug}`}
                     target="_blank"
                     aria-label={`${blog.title} blog link`}
