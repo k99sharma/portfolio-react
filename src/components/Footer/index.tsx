@@ -42,12 +42,12 @@ const socialOptions: LinkType[] = [
   },
   {
     label: "GitHub",
-    path: "#",
+    path: "https://github.com/k99sharma",
     isLink: true,
   },
   {
     label: "LinkedIn",
-    path: "#",
+    path: "https://www.linkedin.com/in/kalashsharma99/",
     isLink: true,
   },
 ];
