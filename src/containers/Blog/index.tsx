@@ -6,6 +6,7 @@ import { BlogType } from "../../types/types";
 
 // importing components
 import BlogView from "../../components/BlogView";
+import Spinner from "../../components/Spinner";
 
 // blog container
 export default function BlogContainer({ count = -1 }: { count?: number }) {
@@ -75,5 +76,5 @@ export default function BlogContainer({ count = -1 }: { count?: number }) {
     }
   }, []);
 
-  return isSubmitting ? "Loading ..." : <BlogView {...blogsData} />;
+  return isSubmitting ? <Spinner /> : <BlogView {...blogsData} />;
 }

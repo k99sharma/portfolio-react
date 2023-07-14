@@ -11,8 +11,8 @@ const navLinks: LinkType[] = [
     isLink: false,
   },
   {
-    label: "Contact",
-    path: "/contact",
+    label: "Projects",
+    path: "/projects",
     isLink: false,
   },
 ];
