@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+::selection{
+    background: #FFDDA1;
+    color: black;
+}
