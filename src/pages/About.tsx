@@ -15,29 +15,21 @@ export default function About() {
       </div>
 
       <div className="about__description text-neutral-5 font-montserrat mb-5">
-        Hi, I am Kalash Sharma and rest of text is copied so don’t bother
-        reading it. <br />
+        Hi, I'm Kalash Sharma, an undergraduate student studying computer
+        science at the KIET Group of Institutions in Ghaziabad.
         <br />
-        Born in Delhi, India, and raised in Lucknow, currently working remotely
-        from a city in the state of Uttar Pradesh. <br />
         <br />
-        As a self-educated developer, it led me to explore various technologies
-        that help in running the web. And such technologies aided to build my
-        work experience in multiple startups as an intern where I encountered
-        the making of different phases of a product. <br />
+        I am a self-taught developer that enjoys learning and experimenting with
+        new technologies. I am now researching web-related technologies.
         <br />
-        During the early days of college, my desire to program and to create
-        things sprung up. With my increasing love for code, my interest in open
-        source and tech-communities peaked. Being a part of a community is more
-        than just a godsend. It eased my chances of meeting some exceptional
-        people in my life. And since then, I have strived to make myself and my
-        days better. <br />
         <br />
-        Aside from this, I possess a few hobbies. From time to time, I treat
-        myself with movies and TV series, favorite genres being thriller,
-        action, and comedy. I am a keen anime enthusiast, and only recently, I
-        have begun reading manga too. When unoccupied from the above activities,
-        you will find me nicely tucked in my bed.
+        In my college years, I looked into a variety of facets of project
+        development, internships, and open-source contributions as a way to
+        participate in technical communities and societies. I aim to level
+        myself up every day by seeking out new learning opportunities.
+        <br />
+        <br />
+        Besides that, I enjoy watching movies, TV shows, and anime.
       </div>
 
       <div className="divider">
