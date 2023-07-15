@@ -33,7 +33,7 @@ export default function ProfilePic() {
         aria-describedBy="profile pic modal"
       >
         <img
-          className="rounded-full"
+          className="rounded-md"
           width={350}
           height={350}
           src="/photo.jpg"
