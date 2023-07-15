@@ -29,7 +29,7 @@ const skillsOptions: LinkType[] = [
   },
   {
     label: "Resume",
-    path: "#",
+    path: "https://drive.google.com/file/d/1zQSLup9y44HCDszkCjT2HK7jVdFN6EBE/view?usp=drive_link",
     isLink: true,
   },
 ];
