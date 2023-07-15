@@ -22,13 +22,13 @@ export default function Home() {
           developer . blogger . open source enthusiast
         </div>
 
-        <div className="home__tagline text-md md:text-xl text-neutral-5 font-thin">
+        <div className="home__tagline text-md md:text-xl text-neutral-5">
           I 💛 to develop &{" "}
-          <span className="hover:border-b-2 text-secondary-4">
+          <span className="hover:border-b-2 text-secondary-5 text-bold">
             <Link to="/projects">build</Link>
           </span>{" "}
           things and sometimes I{" "}
-          <span className="hover:border-b-2 text-secondary-4">
+          <span className="hover:border-b-2 text-secondary-5 text-bold">
             <Link to="/projects">write</Link>
           </span>{" "}
           too.

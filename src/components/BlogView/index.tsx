@@ -14,7 +14,7 @@ export default function BlogView({
 }) {
   return (
     <div className="blogView">
-      <div className="blogView__header text-md tracking-wide text-secondary-4 font-semibold mb-2">
+      <div className="blogView__header text-base text-secondary-5 font-bold mb-2">
         WRITING
       </div>
 
