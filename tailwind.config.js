@@ -15,11 +15,11 @@ export default {
       primary:{
         1: '#556B2F',
         2: '#6B8E23',
-        3: '#3D550C',
+        3: '#BFDB38',
         4: '#808000',
-        5: '#BDB76B',
-        6: '#D7E8BA',
-        7: '#EDEDC7'
+        5: '#8EAC50',
+        6: '#A2FF86',
+        7: '#DDFFBB'
       },
       secondary: {
         1: '#8B5500',

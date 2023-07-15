@@ -2,7 +2,7 @@
 export default function OpenSource() {
   return (
     <div className="openSource">
-      <div className="openSource__header text-secondary-5 font-bold text-base mb-10">
+      <div className="openSource__header text-primary-3 font-bold text-base mb-10">
         OPEN SOURCE CONTRIBUTIONS
       </div>
 

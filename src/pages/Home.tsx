@@ -23,12 +23,12 @@ export default function Home() {
         </div>
 
         <div className="home__tagline text-md md:text-xl text-neutral-5">
-          I 💛 to develop &{" "}
-          <span className="hover:border-b-2 text-secondary-5 text-bold">
+          I 💚 to develop &{" "}
+          <span className="hover:border-b-2 text-primary-3 text-bold">
             <Link to="/projects">build</Link>
           </span>{" "}
           things and sometimes I{" "}
-          <span className="hover:border-b-2 text-secondary-5 text-bold">
+          <span className="hover:border-b-2 text-primary-3 text-bold">
             <Link to="/projects">write</Link>
           </span>{" "}
           too.

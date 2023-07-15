@@ -6,7 +6,7 @@ import ProfilePic from "../components/ProfilePic";
 export default function About() {
   return (
     <div className="about">
-      <div className="about__header text-secondary-5 font-bold text-base mb-10">
+      <div className="about__header text-primary-3 font-bold text-base mb-10">
         ABOUT ME
       </div>
 
@@ -45,7 +45,7 @@ export default function About() {
       </div>
 
       <div className="about__contact">
-        <div className="about__contact__heading text-secondary-5 font-montserrat text-md font-semibold mb-2">
+        <div className="about__contact__heading text-primary-3 font-montserrat text-md font-semibold mb-2">
           GET IN TOUCH
         </div>
 

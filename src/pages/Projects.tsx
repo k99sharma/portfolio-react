@@ -52,14 +52,14 @@ export default function Project() {
   return (
     <div className="project">
       <div className="project__header mb-10">
-        <div className="project__header__heading text-base text-secondary-5 font-bold mb-2">
+        <div className="project__header__heading text-base text-primary-3 font-bold mb-2">
           STUFF THAT I'VE BUILT
         </div>
 
         <div className="project__header__subheading text-neutral-4 font-light">
           To checkout my open source contributions.{" "}
           <span>
-            <Link className="text-secondary-5" to="/opensource">
+            <Link className="text-primary-3" to="/opensource">
               Click Me!
             </Link>
           </span>
