@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer__copyright text-neutral-4 text-xs">
+      <div className="footer__copyright text-neutral-3 text-xs">
         Copyright 2023 © Kalash Sharma
       </div>
     </div>

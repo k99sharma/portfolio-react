@@ -29,8 +29,8 @@ export default function ProfilePic() {
         open={open}
         className="flex items-center justify-center"
         onClose={() => setOpen(false)}
-        aria-labelledBy="profile pic modal"
-        aria-describedBy="profile pic modal"
+        aria-labelledby="profile pic modal"
+        aria-describedby="profile pic modal"
       >
         <img
           className="rounded-md"

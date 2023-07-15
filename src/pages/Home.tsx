@@ -9,6 +9,7 @@ import {
 
 // importing containers
 import BlogContainer from "../containers/Blog";
+import IconButton from "../components/IconButton";
 
 // home page
 export default function Home() {
@@ -48,7 +49,9 @@ export default function Home() {
             target="_blank"
             aria-label="GitHub"
           >
-            <GitHubLogoIcon height={20} width={20} />
+            <IconButton>
+              <GitHubLogoIcon height={20} width={20} />
+            </IconButton>
           </a>
         </div>
 
@@ -58,7 +61,9 @@ export default function Home() {
             target="_blank"
             aria-label="LinkedIn"
           >
-            <LinkedInLogoIcon height={20} width={20} />
+            <IconButton>
+              <LinkedInLogoIcon height={20} width={20} />
+            </IconButton>
           </a>
         </div>
 
@@ -68,7 +73,9 @@ export default function Home() {
             target="_blank"
             aria-label="LinkedIn"
           >
-            <Pencil2Icon height={20} width={20} />
+            <IconButton>
+              <Pencil2Icon height={20} width={20} />
+            </IconButton>
           </a>
         </div>
       </div>
