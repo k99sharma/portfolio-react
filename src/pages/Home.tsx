@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import {
   GitHubLogoIcon,
+  HeartFilledIcon,
   LinkedInLogoIcon,
   Pencil2Icon,
 } from "@radix-ui/react-icons";
@@ -23,7 +24,11 @@ export default function Home() {
         </div>
 
         <div className="home__tagline text-md md:text-xl text-neutral-5">
-          I 💚 to develop &{" "}
+          I{" "}
+          <span className="inline-block">
+            <HeartFilledIcon className="text-primary-3" />
+          </span>{" "}
+          to develop &{" "}
           <span className="hover:border-b-2 text-primary-3 text-bold">
             <Link to="/projects">build</Link>
           </span>{" "}
