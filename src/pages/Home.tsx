@@ -38,19 +38,31 @@ export default function Home() {
       {/* social links */}
       <div className="home__social flex items-center mb-10">
         <div className="home__social__link mr-5 text-neutral-5">
-          <a href="#" target="_blank" aria-label="GitHub">
+          <a
+            href="https://github.com/k99sharma"
+            target="_blank"
+            aria-label="GitHub"
+          >
             <GitHubLogoIcon height={20} width={20} />
           </a>
         </div>
 
         <div className="home__social__link mr-5 text-neutral-5">
-          <a href="#" target="_blank" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/kalashsharma99/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
             <LinkedInLogoIcon height={20} width={20} />
           </a>
         </div>
 
         <div className="home__social__link mr-5 text-neutral-5">
-          <a href="#" target="_blank" aria-label="LinkedIn">
+          <a
+            href="https://kalashsharma.hashnode.dev/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
             <Pencil2Icon height={20} width={20} />
           </a>
         </div>
