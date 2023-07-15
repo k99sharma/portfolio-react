@@ -9,7 +9,7 @@ export default function CustomLink({ label, path, isLink }: LinkType) {
   return isLink ? (
     <button type="button" role="button" aria-label={label}>
       <a
-        className="customLink text-neutral-3 hover:text-neutral-6 text-sm md:text-base font-thin font-montserrat"
+        className="customLink text-neutral-3 hover:text-neutral-6 text-sm md:text-base font-thin"
         href={path}
         target="_blank"
       >
@@ -18,7 +18,7 @@ export default function CustomLink({ label, path, isLink }: LinkType) {
     </button>
   ) : (
     <button
-      className="customButton text-neutral-3 hover:text-neutral-6 text-sm md:text-base font-thin font-montserrat"
+      className="customButton text-neutral-3 hover:text-neutral-6 text-sm md:text-base font-thin"
       type="button"
       role="navigation"
       aria-label={label}
