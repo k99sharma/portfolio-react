@@ -55,7 +55,7 @@ const socialOptions: LinkType[] = [
 // footer component
 export default function Footer() {
   return (
-    <div className="footer mb-5">
+    <div className="footer mb-10">
       <div className="footer__links flex justify-between mb-5">
         <div className="footer__pages">
           {pagesOptions.map((navLink: LinkType) => {
@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer__copyright text-neutral-4 text-xs font-light">
+      <div className="footer__copyright text-neutral-3 text-xs">
         Copyright 2023 © Kalash Sharma
       </div>
     </div>
