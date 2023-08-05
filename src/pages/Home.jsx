@@ -69,11 +69,43 @@ export default function Home() {
 
               {/* coding profiles */}
               <div className="hidden md:block">
-                <div className="skill__header mb-2 text-md font-semibold">
+                <div className="skill__header mb-3 text-md font-semibold">
                   Coding Profiles
                 </div>
 
-                <div className="skill__content text-sm">VS Code • IntelliJ</div>
+                <div className="skill__content text-sm flex items-center justify-center">
+                  <div className="skill__content__hackerrank">
+                    <a
+                      href="https://www.hackerrank.com/kalash_strt"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="mx-3"
+                        width={30}
+                        height={30}
+                        src="/assets/hackerrank.svg"
+                        alt="hackerrank"
+                      />
+                    </a>
+                  </div>
+
+                  <div className="skill__content__leetcode">
+                    <a
+                      href="https://leetcode.com/kalashsharma99/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="mx-3"
+                        width={30}
+                        height={30}
+                        src="/assets/leetcode.svg"
+                        alt="leetcode"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -117,7 +149,39 @@ export default function Home() {
                   Coding Profiles
                 </div>
 
-                <div className="skill__content text-sm">VS Code • IntelliJ</div>
+                <div className="skill__content text-sm flex items-center justify-center">
+                  <div className="skill__content__hackerrank">
+                    <a
+                      href="https://www.hackerrank.com/kalash_strt"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="mx-3"
+                        width={30}
+                        height={30}
+                        src="/assets/hackerrank.svg"
+                        alt="hackerrank"
+                      />
+                    </a>
+                  </div>
+
+                  <div className="skill__content__leetcode">
+                    <a
+                      href="https://leetcode.com/kalashsharma99/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="mx-3"
+                        width={30}
+                        height={30}
+                        src="/assets/leetcode.svg"
+                        alt="leetcode"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
