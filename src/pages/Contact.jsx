@@ -6,9 +6,18 @@ export default function Contact() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="contact w-4/5">
-        <div className="contact__header text-2xl font-bold mb-14">
-          Love to hear from you, <br />
-          Get in touch
+        <div className="contact__header mb-12">
+          <div className="contact__header__heading text-2xl font-bold mb-3">
+            Love to hear from you, <br />
+            Get in touch
+          </div>
+
+          <div className="contact__header__subheading text-lg">
+            Easiest way to contact me,{" "}
+            <span className="text-primary">
+              <a href="mailto:kalash.strt@gmail.com">mail me!</a>
+            </span>
+          </div>
         </div>
 
         <form name="contact" data-netlify="true" method="POST">
