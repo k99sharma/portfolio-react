@@ -10,7 +10,7 @@ export default {
           1: "#2D3436",
         },
         neutral: {
-          0: "#F5F5F5",
+          0: "#FFFFFF",
           1: "#1E1E1E",
         },
       },

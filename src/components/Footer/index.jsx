@@ -50,7 +50,7 @@ function FooterSocialLinks() {
 // footer component
 export default function Footer() {
   return (
-    <div className="relative mt-36">
+    <div className="mt-48">
       <div className="absolute w-full flex items-center justify-center -my-24">
         <CTA />
       </div>
@@ -60,7 +60,7 @@ export default function Footer() {
           <img width={50} height={50} src="/assets/logo.png" alt="logo" />
         </div>
 
-        <div className="footer__tagline text-center font-thin text-2xl my-5">
+        <div className="footer__tagline text-center font-thin text-xl md:text-2xl my-5">
           Living, learning & leveling <br />
           up one day at a time
         </div>
