@@ -83,7 +83,7 @@ function ProjectCardModal({
             Project Description
           </div>
 
-          <div className="projectCardModal__projectdescription__content text-lg mb-10">
+          <div className="projectCardModal__projectdescription__content text-md mb-10">
             {description}
           </div>
 
@@ -91,7 +91,7 @@ function ProjectCardModal({
             Tech Used
           </div>
 
-          <div className="projectCardModal__tech__content text-lg mb-5">
+          <div className="projectCardModal__tech__content text-md mb-5">
             {tech}
           </div>
         </div>
@@ -130,7 +130,7 @@ function ProjectCard(_props) {
           className="rounded-lg"
           height={200}
           width={200}
-          src="/projects/project.png"
+          src={_props.img}
           alt={_props.label}
         />
       </button>
