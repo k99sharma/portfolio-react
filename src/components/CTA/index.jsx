@@ -12,14 +12,16 @@ export default function CTA() {
       </div>
 
       <div className="cta__button">
-        <button
-          className="border-neutral-1 border-2 hover:bg-neutral-1 hover:text-neutral-0 px-10 py-4 rounded-3xl"
-          type="button"
-          role="navigation"
-          aria-label="cta"
-        >
-          <Link to="/contact">Let's do this</Link>
-        </button>
+        <Link to="/contact">
+          <button
+            className="border-neutral-1 border-2 hover:bg-neutral-1 hover:text-neutral-0 px-10 py-4 rounded-3xl"
+            type="button"
+            role="navigation"
+            aria-label="cta"
+          >
+            Let's do this
+          </button>
+        </Link>
       </div>
     </div>
   );
