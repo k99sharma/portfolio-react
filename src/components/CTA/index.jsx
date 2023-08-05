@@ -7,8 +7,8 @@ export default function CTA() {
       <div className="cta__heading font-bold text-3xl">Get In Touch</div>
 
       <div className="cta__subheading font-semibold text-sm md:text-md lg:text-lg my-8 md:my-5">
-        Message me if you have any work <br /> opportunities or a 'cool' project
-        idea!
+        {`Message me if you have any work <br /> opportunities or a 'cool' project
+        idea!`}
       </div>
 
       <div className="cta__button">
@@ -19,7 +19,7 @@ export default function CTA() {
             role="navigation"
             aria-label="cta"
           >
-            Let's do this
+            {`Let's do this`}
           </button>
         </Link>
       </div>

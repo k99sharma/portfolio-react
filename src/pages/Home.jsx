@@ -31,7 +31,7 @@ export default function Home() {
       <div className="home__about bg-gradient-to-b from-bg-0 to-bg-1 p-10">
         <div className="home__about__content text-center mb-10 text-neutral-0">
           <div className="home__about__content__header font-semibold text-2xl my-10">
-            Hi, I'm Kalash. Nice to meet you.
+            {`Hi, I'm Kalash. Nice to meet you.`}
           </div>
 
           <div className="home__about__content__subheader text-lg flex items-center justify-center">
