@@ -33,7 +33,7 @@ function BlogsView({ blogs }) {
               {getPublishDate(blog.dateAdded)}
             </div>
 
-            <div className="blogView__blog inline-block text-xl hover:text-primary hover:underline">
+            <div className="blogView__blog inline-block text-xl hover:text-primary hover:underline hover:underline-offset-4">
               <a
                 href={`https://kalashsharma.hashnode.dev/${blog.slug}`}
                 target="_blank"
@@ -57,7 +57,7 @@ export default function Blog() {
     <div className="flex flex-col items-center justify-center">
       <div className="blog w-4/5">
         <div className="blog__header mb-10">
-          <div className="blog__header__heading font-bold text-2xl mb-3">
+          <div className="blog__header__heading font-bold text-2xl mb-3 text-primary">
             Writing
           </div>
 
