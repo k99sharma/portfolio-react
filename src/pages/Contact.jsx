@@ -20,7 +20,12 @@ export default function Contact() {
           </div>
         </div>
 
-        <form name="contact" data-netlify="true" method="POST">
+        <form
+          autoComplete="off"
+          name="contact"
+          data-netlify="true"
+          method="POST"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mb-5">
             <div className="mb-5">
               <div className="form__label mb-3 font-semibold">Your Name</div>
