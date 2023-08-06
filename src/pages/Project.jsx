@@ -93,7 +93,7 @@ export default function Project() {
             </div>
           </div>
 
-          <div className="project__navigation flex items-center justify-around">
+          <div className="project__navigation__mobile flex items-center justify-around md:hidden">
             <div className="project__navigation__left">
               <Link to={`/projects/${(count + parseInt(id) - 1) % count}`}>
                 <button
