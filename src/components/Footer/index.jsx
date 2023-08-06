@@ -50,7 +50,7 @@ function FooterSocialLinks() {
 // footer component
 export default function Footer() {
   return (
-    <div className="mt-48">
+    <div className="mt-48 bottom-0 sticky">
       <div className="absolute w-full flex items-center justify-center -my-24">
         <CTA />
       </div>
