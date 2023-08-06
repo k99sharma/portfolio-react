@@ -92,6 +92,32 @@ export default function Project() {
               {project.tech}
             </div>
           </div>
+
+          <div className="project__navigation__mobile flex items-center justify-around md:hidden">
+            <div className="project__navigation__left">
+              <Link to={`/projects/${(count + parseInt(id) - 1) % count}`}>
+                <button
+                  className="bg-blue-400 p-3 rounded-full"
+                  type="button"
+                  role="navigation"
+                >
+                  <ArrowLeftIcon className="h-5 w-5" />
+                </button>
+              </Link>
+            </div>
+
+            <div className="project__navigation__right">
+              <Link to={`/projects/${(parseInt(id) + 1) % count}`}>
+                <button
+                  className="bg-blue-400 p-3 rounded-full"
+                  type="button"
+                  role="navigation"
+                >
+                  <ArrowRightIcon className="h-5 w-5" />
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 

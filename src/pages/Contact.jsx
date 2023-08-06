@@ -7,14 +7,14 @@ export default function Contact() {
     <div className="flex flex-col items-center justify-center">
       <div className="contact w-4/5">
         <div className="contact__header mb-12">
-          <div className="contact__header__heading text-2xl font-bold mb-3">
+          <div className="contact__header__heading text-2xl font-bold mb-3 text-primary">
             Love to hear from you, <br />
             Get in touch
           </div>
 
           <div className="contact__header__subheading text-lg">
             Easiest way to contact me,{" "}
-            <span className="text-primary">
+            <span className="text-primary underline underline-offset-2">
               <a href="mailto:kalash.strt@gmail.com">mail me!</a>
             </span>
           </div>
