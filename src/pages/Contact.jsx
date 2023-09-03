@@ -34,13 +34,11 @@ export default function Contact() {
           </div>
 
           <form
-            action="/"
             autoComplete="off"
             name="contact"
             data-netlify="true"
             method="POST"
           >
-            <input type="hidden" name="form-name" value="contact" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mb-5">
               <div className="mb-5">
                 <div className="form__label mb-3 font-semibold">Your Name</div>
