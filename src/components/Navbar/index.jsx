@@ -24,10 +24,15 @@ const navbarLinks = [
 ];
 
 // navbar link button component
-export function NavbarLinkButton({ label, path }) {
+export function NavbarLinkButton({ label, path, mobileClose }) {
   return (
     <div className="navbarLinkButton text-lg mb-3 md:mb-0 md:text-sm md:mx-5 mx-2">
-      <button type="button" role="navigation" aria-label={label}>
+      <button
+        onClick={mobileClose}
+        type="button"
+        role="navigation"
+        aria-label={label}
+      >
         <Link to={path}>{label}</Link>
       </button>
     </div>
@@ -40,8 +45,12 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   // toggle mobile menu
-  const handleToggle = () => {
-    setOpen(!open);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -53,7 +62,7 @@ export default function Navbar() {
 
         <div className="navbar__mobileMenuButton md:hidden">
           <button
-            onClick={handleToggle}
+            onClick={handleOpen}
             type="button"
             role="navigation"
             aria-label="navbar mobile button"
@@ -80,7 +89,7 @@ export default function Navbar() {
       </div>
 
       {/* mobile view navbar links */}
-      <Drawer anchor="top" open={open} onClose={handleToggle}>
+      <Drawer anchor="top" open={open} onClose={handleClose}>
         <div className="banner my-5 flex items-center justify-center">
           <img
             className="h-8 w-8"
@@ -92,7 +101,13 @@ export default function Navbar() {
 
         <div className="flex flex-col items-center">
           {navbarLinks.map((link) => {
-            return <NavbarLinkButton key={link.label} {...link} />;
+            return (
+              <NavbarLinkButton
+                mobileClose={handleClose}
+                key={link.label}
+                {...link}
+              />
+            );
           })}
         </div>
 
