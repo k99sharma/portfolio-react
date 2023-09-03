@@ -43,6 +43,16 @@ export default function Navbar() {
         {navbarLinks.map((link) => {
           return <NavbarLinkButton key={link.label} {...link} />;
         })}
+
+        <div className="navbar__navlinks__resume text-sm mx-2 md:mx-5">
+          <a
+            href="https://drive.google.com/file/d/1ff2NvVi8MPCj65j92q5QRjwzVXJHd1Rn/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </div>
   );
