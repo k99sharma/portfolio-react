@@ -34,7 +34,7 @@ export default function Contact() {
           </div>
 
           <form
-            action="/contact"
+            action="/"
             autoComplete="off"
             name="contact"
             data-netlify="true"
